@@ -72,8 +72,7 @@
             <ProgressBar
                 android:id="@+id/belly_fat_progress"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:buttonTint="@color/white"/>
+                android:layout_height="wrap_content" />
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
@@ -121,8 +120,7 @@
             <ProgressBar
                 android:id="@+id/keep_fit_progress"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:buttonTint="@color/white"/>
+                android:layout_height="wrap_content"/>
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
@@ -170,8 +168,7 @@
             <ProgressBar
                 android:id="@+id/build_muscle_progress"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:buttonTint="@color/white" />
+                android:layout_height="wrap_content"/>
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
