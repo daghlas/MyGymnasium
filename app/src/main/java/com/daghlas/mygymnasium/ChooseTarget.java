@@ -5,12 +5,14 @@ import androidx.cardview.widget.CardView;
 import androidx.core.content.ContextCompat;
 
 import android.content.Intent;
+import android.graphics.PorterDuff;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class ChooseTarget extends AppCompatActivity {
 
@@ -60,15 +62,66 @@ public class ChooseTarget extends AppCompatActivity {
                     bellyFat.setCardBackgroundColor(getResources().getColor(R.color.grey));
                 }else {
                     bellyFat.setCardBackgroundColor(getResources().getColor(R.color.blue));
+                    belly_progressBar.getIndeterminateDrawable().setColorFilter(getResources().getColor(R.color.white), PorterDuff.Mode.SRC_IN);
                     belly_progressBar.setVisibility(View.VISIBLE);
                     //next activity
                     new Handler().postDelayed(()->{
-                        Intent intent = new Intent(ChooseTarget.this, MainActivity.class);
+                        Intent intent = new Intent(ChooseTarget.this, YourWeight.class);
                         startActivity(intent);
                         finish();
+                        belly_progressBar.setVisibility(View.INVISIBLE);
                     },2000);
                 }
                 isClicked = !isClicked;
+            }
+        });
+
+        keepFit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                /*
+                if (isClicked){
+                    keepFit.setCardBackgroundColor(getResources().getColor(R.color.grey));
+                }else {
+                    keepFit.setCardBackgroundColor(getResources().getColor(R.color.blue));
+                    fit_progressBar.getIndeterminateDrawable().setColorFilter(getResources().getColor(R.color.white), PorterDuff.Mode.SRC_IN);
+                    fit_progressBar.setVisibility(View.VISIBLE);
+                    //next activity
+                    new Handler().postDelayed(()->{
+                        Intent intent = new Intent(ChooseTarget.this, YourWeight.class);
+                        startActivity(intent);
+                        finish();
+                        fit_progressBar.setVisibility(View.INVISIBLE);
+                    },2000);
+                }
+                isClicked = !isClicked;
+
+                 */
+                Toast.makeText(ChooseTarget.this, "Coming soon", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        buildMuscle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                /*
+                if (isClicked){
+                    buildMuscle.setCardBackgroundColor(getResources().getColor(R.color.grey));
+                }else {
+                    buildMuscle.setCardBackgroundColor(getResources().getColor(R.color.blue));
+                    muscle_progressBar.getIndeterminateDrawable().setColorFilter(getResources().getColor(R.color.white), PorterDuff.Mode.SRC_IN);
+                    muscle_progressBar.setVisibility(View.VISIBLE);
+                    //next activity
+                    new Handler().postDelayed(()->{
+                        Intent intent = new Intent(ChooseTarget.this, YourWeight.class);
+                        startActivity(intent);
+                        finish();
+                        muscle_progressBar.setVisibility(View.INVISIBLE);
+                    },2000);
+                }
+                isClicked = !isClicked;
+                 */
+                Toast.makeText(ChooseTarget.this, "Coming soon", Toast.LENGTH_SHORT).show();
             }
         });
 
