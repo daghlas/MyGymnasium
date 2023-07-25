@@ -42,9 +42,9 @@
         android:layout_width="@dimen/_150sdp"
         android:layout_height="@dimen/_150sdp"
         android:layout_centerVertical="true"
-        android:layout_marginStart="-85sp"
-        android:rotation="30"
-        android:src="@drawable/ic_scale" />
+        android:layout_marginStart="-55sp"
+        android:rotationY="180"
+        android:src="@drawable/ic_height" />
 
     <NumberPicker
         android:id="@+id/weightPicker"
@@ -66,6 +66,53 @@
         android:theme="@style/UnitPickerText"
         android:layout_centerVertical="true"
         android:layout_toEndOf="@id/weightPicker"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@id/weightPicker"
+        android:layout_centerInParent="true"
+        android:layout_marginVertical="@dimen/_80sdp">
+
+        <TextView
+            android:id="@+id/feet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/blue"
+            android:textSize="@dimen/_22sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:text="feet"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/_18sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/inches"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/blue"
+            android:textSize="@dimen/_22sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:text="inches"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/_18sdp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
 
     <Button
         android:id="@+id/next"
