@@ -79,7 +79,6 @@ public class ChooseTarget extends AppCompatActivity {
         keepFit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                /*
                 if (isClicked){
                     keepFit.setCardBackgroundColor(getResources().getColor(R.color.grey));
                 }else {
@@ -88,16 +87,13 @@ public class ChooseTarget extends AppCompatActivity {
                     fit_progressBar.setVisibility(View.VISIBLE);
                     //next activity
                     new Handler().postDelayed(()->{
-                        Intent intent = new Intent(ChooseTarget.this, YourWeight.class);
+                        Intent intent = new Intent(ChooseTarget.this, MainActivity.class);
                         startActivity(intent);
                         finish();
                         fit_progressBar.setVisibility(View.INVISIBLE);
                     },2000);
                 }
                 isClicked = !isClicked;
-
-                 */
-                Toast.makeText(ChooseTarget.this, "Coming soon", Toast.LENGTH_SHORT).show();
             }
         });
 
