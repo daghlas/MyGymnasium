@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -15,6 +17,7 @@ public class YourWeight extends AppCompatActivity {
     NumberPicker weightPicker, unitPicker;
     ImageView back;
     Button next;
+    SharedPreferences preferences;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,10 +26,17 @@ public class YourWeight extends AppCompatActivity {
 
         getWindow().setStatusBarColor(ContextCompat.getColor(this, R.color.white));
 
+        preferences = getSharedPreferences("VALUES", MODE_PRIVATE);
         weightPicker = findViewById(R.id.weightPicker);
         weightPicker.setMinValue(30);
         weightPicker.setMaxValue(180);
         weightPicker.setValue(70);
+        weightPicker.setOnValueChangedListener(new NumberPicker.OnValueChangeListener() {
+            @Override
+            public void onValueChange(NumberPicker picker, int oldVal, int newVal) {
+                preferences.edit().putInt("yourWeight", newVal).apply();
+            }
+        });
 
         unitPicker = findViewById(R.id.unitPicker);
         WeightUnits.initUnits();
