@@ -7,4 +7,11 @@
     </style>
 
     <style name="Theme.MyGymnasium" parent="Base.Theme.MyGymnasium" />
+
+    <style name="Theme.MyGymnasium.DarkActionBar." parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/blue</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:textColorSecondary">@color/white</item>
+    </style>
 </resources>
