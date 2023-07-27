@@ -20,8 +20,8 @@ public class WeightUnits {
         WeightUnits kilograms = new WeightUnits(0, "kg");
         unitsArrayList.add(kilograms);
 
-        WeightUnits pounds = new WeightUnits(0, "lbs");
-        unitsArrayList.add(pounds);
+        //WeightUnits pounds = new WeightUnits(0, "lbs");
+        //unitsArrayList.add(pounds);
     }
 
     public static ArrayList<WeightUnits> getUnitsArrayList() {
