@@ -1,4 +1,4 @@
-package com.daghlas.mygymnasium;
+package com.daghlas.mygymnasium.BMI;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
@@ -11,6 +11,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.daghlas.mygymnasium.MainActivity;
+import com.daghlas.mygymnasium.R;
 
 public class BMI extends AppCompatActivity {
 
