@@ -1,9 +1,12 @@
 package com.daghlas.mygymnasium;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 import androidx.core.content.ContextCompat;
 
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.os.SystemClock;
@@ -19,6 +22,7 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.daghlas.mygymnasium.Routines.FullBodyRoutines;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.Calendar;
@@ -33,10 +37,11 @@ public class MainActivity extends AppCompatActivity {
     LinearLayout createReminder, waterProgress;
     ScrollView scrollView;
     View overlay;
-    CardView cardView1, minusGlass, addGlass;
+    CardView cardView1, minusGlass, addGlass, fullBodyRoutine, buttLegsRoutine, absRoutine, armsRoutine;
     ProgressBar progressBar;
     int currentValue = 0;
     int drinking = 0;
+    SharedPreferences sharedPreferences;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,13 +50,23 @@ public class MainActivity extends AppCompatActivity {
 
         getWindow().setStatusBarColor(ContextCompat.getColor(this, R.color.blue));
 
-        if(getSupportActionBar()!=null){
+        if (getSupportActionBar() != null) {
             getSupportActionBar().setTitle(Html.fromHtml("<font color='#FFFFFFFF'>Ashley's GYM App</font>"));
             getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.blue)));
         }
 
         greeting_tag = findViewById(R.id.greeting);
         greeting_image = findViewById(R.id.greeting_image);
+
+        sharedPreferences = getSharedPreferences("VALUES", MODE_PRIVATE);
+
+        //
+        //int val = Integer.parseInt(sharedPreferences.getString("glassesDrunk", ""));
+        //int val2 = Integer.parseInt(sharedPreferences.getString("glassesRemaining", ""));
+        //if (val2 != 0) {
+        //    glassesDrunk.setText(String.valueOf(val));
+        //    glassesRemaining.setText(String.valueOf(val2));
+        //}
 
         //
         startToday = findViewById(R.id.textView3);
@@ -95,23 +110,23 @@ public class MainActivity extends AppCompatActivity {
                     createReminder.setVisibility(View.GONE);
                     overlay.setVisibility(View.GONE);
                     navigationView.setVisibility(View.VISIBLE);
-                } else if(createReminder.getVisibility() == View.GONE && currentValue > 0){
-                    if(drinking < currentValue){
-                        drinking ++;
+                } else if (createReminder.getVisibility() == View.GONE && currentValue > 0) {
+                    if (drinking < currentValue) {
+                        drinking++;
                         glassesDrunk.setText(String.valueOf(drinking));
                         //progressBar setting
-                        int numerator = Integer.parseInt(glassesDrunk.getText().toString().trim());;
+                        int numerator = Integer.parseInt(glassesDrunk.getText().toString().trim());
                         int denominator = Integer.parseInt(glassesRemaining.getText().toString().trim());
                         progressBar.setMax(denominator);
                         progressBar.setProgress(numerator);
 
-                    }else if(drinking == currentValue){
+                    } else if (drinking == currentValue) {
                         glassesDrunk.setText(String.valueOf(drinking));
                         Toast.makeText(MainActivity.this, "Well Done! Milestone complete", Toast.LENGTH_LONG).show();
                         create.setEnabled(false);
                         create.setText(R.string.completed);
                     }
-                } else{
+                } else {
                     createReminder.setVisibility(View.VISIBLE);
                     overlay.setVisibility(View.VISIBLE);
                     navigationView.setVisibility(View.GONE);
@@ -147,9 +162,9 @@ public class MainActivity extends AppCompatActivity {
         setGlass.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (currentValue == 0){
+                if (currentValue == 0) {
                     Toast.makeText(MainActivity.this, "Add one or more glasses", Toast.LENGTH_SHORT).show();
-                }else{
+                } else {
                     createReminder.setVisibility(View.GONE);
                     overlay.setVisibility(View.GONE);
                     navigationView.setVisibility(View.VISIBLE);
@@ -175,6 +190,16 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        fullBodyRoutine = findViewById(R.id.cardView2);
+        fullBodyRoutine.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, FullBodyRoutines.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
     }
 
     @Override
@@ -195,4 +220,15 @@ public class MainActivity extends AppCompatActivity {
         menuInflater.inflate(R.menu.options_menu, menu);
         return super.onCreateOptionsMenu(menu);
     }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        // Save the text value to SharedPreferences
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putInt("glassesDrunk", drinking);
+        editor.putInt("glassesRemaining", currentValue);
+        editor.apply();
+    }
+
 }
