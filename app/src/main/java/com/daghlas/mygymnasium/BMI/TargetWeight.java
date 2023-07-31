@@ -1,4 +1,4 @@
-package com.daghlas.mygymnasium;
+package com.daghlas.mygymnasium.BMI;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
@@ -6,11 +6,12 @@ import androidx.core.content.ContextCompat;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.NumberPicker;
+
+import com.daghlas.mygymnasium.R;
 
 public class TargetWeight extends AppCompatActivity {
 
