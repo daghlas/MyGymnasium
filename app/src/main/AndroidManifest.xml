@@ -13,16 +13,28 @@
         android:theme="@style/Theme.MyGymnasium"
         tools:targetApi="31">
         <activity
-            android:name=".BMI"
+            android:name=".Workouts.FullBody.FullBodyMonday"
+            android:exported="false"
+            android:theme="@style/Theme.MyGymnasium.DarkActionBar."/>
+        <activity
+            android:name=".Workouts.FullBody.FullBodyWorkout"
+            android:exported="false"
+            android:theme="@style/Theme.MyGymnasium.DarkActionBar." />
+        <activity
+            android:name=".Routines.FullBodyRoutines"
+            android:exported="false"
+            android:theme="@style/Theme.MyGymnasium.DarkActionBar." />
+        <activity
+            android:name=".BMI.BMI"
             android:exported="false" />
         <activity
-            android:name=".YourHeight"
+            android:name=".BMI.YourHeight"
             android:exported="false" />
         <activity
-            android:name=".TargetWeight"
+            android:name=".BMI.TargetWeight"
             android:exported="false" />
         <activity
-            android:name=".YourWeight"
+            android:name=".BMI.YourWeight"
             android:exported="false" />
         <activity
             android:name=".ChooseTarget"
@@ -40,7 +52,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:theme="@style/Theme.MyGymnasium.DarkActionBar."/>
+            android:theme="@style/Theme.MyGymnasium.DarkActionBar." />
     </application>
 
 </manifest>
