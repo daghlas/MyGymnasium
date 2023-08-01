@@ -41,7 +41,6 @@ public class MainActivity extends AppCompatActivity {
     ProgressBar progressBar;
     int currentValue = 0;
     int drinking = 0;
-    SharedPreferences sharedPreferences;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,16 +56,6 @@ public class MainActivity extends AppCompatActivity {
 
         greeting_tag = findViewById(R.id.greeting);
         greeting_image = findViewById(R.id.greeting_image);
-
-        sharedPreferences = getSharedPreferences("VALUES", MODE_PRIVATE);
-
-        //
-        //int val = Integer.parseInt(sharedPreferences.getString("glassesDrunk", ""));
-        //int val2 = Integer.parseInt(sharedPreferences.getString("glassesRemaining", ""));
-        //if (val2 != 0) {
-        //    glassesDrunk.setText(String.valueOf(val));
-        //    glassesRemaining.setText(String.valueOf(val2));
-        //}
 
         //
         startToday = findViewById(R.id.textView3);
@@ -196,7 +185,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, FullBodyRoutines.class);
                 startActivity(intent);
-                finish();
+                //finish();
             }
         });
 
@@ -219,16 +208,6 @@ public class MainActivity extends AppCompatActivity {
         MenuInflater menuInflater = getMenuInflater();
         menuInflater.inflate(R.menu.options_menu, menu);
         return super.onCreateOptionsMenu(menu);
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-        // Save the text value to SharedPreferences
-        SharedPreferences.Editor editor = sharedPreferences.edit();
-        editor.putInt("glassesDrunk", drinking);
-        editor.putInt("glassesRemaining", currentValue);
-        editor.apply();
     }
 
 }
