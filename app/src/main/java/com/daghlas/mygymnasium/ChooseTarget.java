@@ -14,6 +14,8 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.daghlas.mygymnasium.BMI.YourWeight;
+
 public class ChooseTarget extends AppCompatActivity {
 
     CardView bellyFat, keepFit, buildMuscle;
