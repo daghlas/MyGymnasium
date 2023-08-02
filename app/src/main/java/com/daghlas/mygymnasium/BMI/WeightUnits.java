@@ -1,4 +1,4 @@
-package com.daghlas.mygymnasium;
+package com.daghlas.mygymnasium.BMI;
 
 import java.util.ArrayList;
 
