@@ -2,9 +2,13 @@ package com.daghlas.mygymnasium.Adapters;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.graphics.drawable.AnimatedImageDrawable;
+import android.graphics.drawable.AnimationDrawable;
+import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -45,9 +49,17 @@ public class ExercisesAdapter extends RecyclerView.Adapter<ExercisesAdapter.MyVi
 
     public static class MyViewHolder extends RecyclerView.ViewHolder{
 
+        ImageView sample;
+
         @SuppressLint("ResourceType")
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
+
+            sample = itemView.findViewById(R.id.sample);
+            sample.setBackgroundResource(R.raw.sample);
+
+            //AnimationDrawable animationDrawable = (AnimationDrawable) sample.getBackground();
+            //animationDrawable.start();
 
         }
     }
