@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Routines.FullBodyRoutines">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/grey"
+            android:layout_margin="@dimen/_5sdp"
+            app:cardElevation="0dp"
+            app:cardCornerRadius="@dimen/_15sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/_5sdp"
+                android:padding="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pre-workout activities"
+                    android:textSize="@dimen/_15sdp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="boosts energy levels and improves strength and endurance prior to the workout"
+                    android:textSize="@dimen/_11sdp"
+                    android:layout_marginTop="@dimen/_5sdp"/>
+
+                <Button
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_28sdp"
+                    android:text="START"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/button_bg"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/grey"
+            android:layout_margin="@dimen/_5sdp"
+            app:cardElevation="0dp"
+            app:cardCornerRadius="@dimen/_15sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/_5sdp"
+                android:padding="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Workout activities"
+                    android:textSize="@dimen/_15sdp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="strengthens bones and muscles, and improves your ability to do everyday activities"
+                    android:textSize="@dimen/_11sdp"
+                    android:layout_marginTop="@dimen/_5sdp"/>
+
+                <Button
+                    android:id="@+id/startWorkout"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_28sdp"
+                    android:text="START"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/button_bg"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/grey"
+            android:layout_margin="@dimen/_5sdp"
+            app:cardElevation="0dp"
+            app:cardCornerRadius="@dimen/_15sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/_5sdp"
+                android:padding="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Post-workout activities"
+                    android:textSize="@dimen/_15sdp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="helps to maintain optimum energy levels as you restore your vitality"
+                    android:textSize="@dimen/_11sdp"
+                    android:layout_marginTop="@dimen/_5sdp"/>
+
+                <Button
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_28sdp"
+                    android:text="START"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/button_bg"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/grey"
+            android:layout_margin="@dimen/_5sdp"
+            app:cardElevation="0dp"
+            app:cardCornerRadius="@dimen/_15sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/_5sdp"
+                android:padding="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yoga"
+                    android:textSize="@dimen/_15sdp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="creates mental clarity and calmness, relaxes the mind, centers attention, and sharpens concentration"
+                    android:textSize="@dimen/_11sdp"
+                    android:layout_marginTop="@dimen/_5sdp"/>
+
+                <Button
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_28sdp"
+                    android:text="START"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/button_bg"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>
