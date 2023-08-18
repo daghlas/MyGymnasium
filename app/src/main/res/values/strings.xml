@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MyGymnasium</string>
+    <string name="underweight">UNDERWEIGHT</string>
+    <string name="normal_weight">HEALTHY WEIGHT</string>
+    <string name="overweight">OVERWEIGHT</string>
+    <string name="obese">OBESE</string>
+    <string name="good_morning">GOOD MORNING</string>
+    <string name="good_afternoon">GOOD AFTERNOON</string>
+    <string name="good_evening">GOOD EVENING</string>
+    <string name="good_night">GOOD NIGHT</string>
+    <string name="drink">DRINK</string>
+    <string name="completed">COMPLETED</string>
+</resources>
