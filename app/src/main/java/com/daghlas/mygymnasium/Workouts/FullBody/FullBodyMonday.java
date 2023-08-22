@@ -23,6 +23,12 @@ public class FullBodyMonday extends AppCompatActivity {
     RecyclerView recyclerView;
     ExercisesAdapter adapter;
     List<ExercisesModel> exercisesModelList;
+    int[] exerciseImage = {R.drawable.jumping_jacks,
+            R.drawable.squats,
+            R.drawable.plank,
+            R.drawable.bicycle_crunches,
+            R.drawable.reverse_crucnhes,
+            R.drawable.cat_cow_pose};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,7 +49,16 @@ public class FullBodyMonday extends AppCompatActivity {
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
+        setUpExercisesModel();
+    }
 
+    private void setUpExercisesModel() {
+        String[] exerciseName = getResources().getStringArray(R.array.monday_full_body);
+        String[] exerciseDuration = getResources().getStringArray(R.array.monday_full_body_duration);
+
+        for (int i = 0; i < exerciseName.length; i++) {
+            exercisesModelList.add(new ExercisesModel(exerciseName[i], exerciseDuration[i], exerciseImage[i]));
+        }
     }
 
     @Override
