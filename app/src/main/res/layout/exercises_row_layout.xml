@@ -13,6 +13,7 @@
         app:cardElevation="0dp">
 
         <ImageView
+            android:padding="@dimen/_7sdp"
             android:id="@+id/sample"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -28,6 +29,7 @@
         android:layout_marginStart="@dimen/_30sdp">
 
         <TextView
+            android:id="@+id/exerciseName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="EXERCISE NAME"
@@ -35,6 +37,7 @@
             android:textColor="@color/black"/>
 
         <TextView
+            android:id="@+id/exerciseDuration"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="00:00"
