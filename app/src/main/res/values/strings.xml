@@ -10,4 +10,24 @@
     <string name="good_night">GOOD NIGHT</string>
     <string name="drink">DRINK</string>
     <string name="completed">COMPLETED</string>
+
+
+    <string-array name="monday_full_body">
+        <item>JUMPING JACKS</item>
+        <item>SQUATS</item>
+        <item>PLANK LEG UP</item>
+        <item>BICYCLE CRUNCHES</item>
+        <item>REVERSE CRUNCHES</item>
+        <item>CAT COW POSE</item>
+    </string-array>
+
+    <string-array name="monday_full_body_duration">
+        <item>00:20</item>
+        <item>00:30</item>
+        <item>00:30</item>
+        <item>00:20</item>
+        <item>00:20</item>
+        <item>00:30</item>
+    </string-array>
+
 </resources>
