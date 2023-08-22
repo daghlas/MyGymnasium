@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -39,24 +40,30 @@ public class ExercisesAdapter extends RecyclerView.Adapter<ExercisesAdapter.MyVi
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-
+        holder.exerciseName.setText(exercisesModelList.get(position).getExercise_name());
+        holder.exerciseDuration.setText(exercisesModelList.get(position).getDuration());
+        holder.sample.setImageResource(exercisesModelList.get(position).getImage());
     }
 
     @Override
     public int getItemCount() {
-        return 6;
+        return exercisesModelList.size();
     }
 
     public static class MyViewHolder extends RecyclerView.ViewHolder{
 
+        TextView exerciseName, exerciseDuration;
         ImageView sample;
 
         @SuppressLint("ResourceType")
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
 
+            exerciseName = itemView.findViewById(R.id.exerciseName);
+            exerciseDuration = itemView.findViewById(R.id.exerciseDuration);
+
             sample = itemView.findViewById(R.id.sample);
-            sample.setBackgroundResource(R.raw.sample);
+            //sample.setBackgroundResource(R.raw.sample);
 
             //AnimationDrawable animationDrawable = (AnimationDrawable) sample.getBackground();
             //animationDrawable.start();
