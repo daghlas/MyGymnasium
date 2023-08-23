@@ -39,4 +39,6 @@ dependencies {
     //my added dependencies
     //layout sizing dependency for different screen sizes
     implementation 'com.intuit.sdp:sdp-android:1.1.0'
+    //image gifs
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.27'
 }
