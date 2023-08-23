@@ -89,6 +89,7 @@
                     android:layout_weight="1"/>
 
                 <Button
+                    android:id="@+id/startTuesday"
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/_28sdp"
                     android:text="START"
@@ -129,6 +130,7 @@
                     android:layout_weight="1"/>
 
                 <Button
+                    android:id="@+id/startWednesday"
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/_28sdp"
                     android:text="START"
@@ -169,6 +171,7 @@
                     android:layout_weight="1"/>
 
                 <Button
+                    android:id="@+id/startThursday"
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/_28sdp"
                     android:text="START"
