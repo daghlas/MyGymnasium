@@ -28,7 +28,7 @@ public class FullBodyMonday extends AppCompatActivity {
             R.drawable.plank,
             R.drawable.bicycle_crunches,
             R.drawable.reverse_crucnhes,
-            R.drawable.cat_cow_pose};
+            R.drawable.sample};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
