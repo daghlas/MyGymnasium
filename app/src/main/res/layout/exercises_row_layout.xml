@@ -12,7 +12,7 @@
         app:cardCornerRadius="@dimen/_10sdp"
         app:cardElevation="0dp">
 
-        <ImageView
+        <pl.droidsonroids.gif.GifImageView
             android:padding="@dimen/_7sdp"
             android:id="@+id/sample"
             android:layout_width="match_parent"
