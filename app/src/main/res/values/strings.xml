@@ -11,16 +11,15 @@
     <string name="drink">DRINK</string>
     <string name="completed">COMPLETED</string>
 
-
+    <!-- MONDAY FULL BODY-->
     <string-array name="monday_full_body">
         <item>JUMPING JACKS</item>
         <item>SQUATS</item>
         <item>PLANK LEG UP</item>
         <item>BICYCLE CRUNCHES</item>
         <item>REVERSE CRUNCHES</item>
-        <item>CAT COW POSE</item>
+        <item>BOX PUSH-UPS</item>
     </string-array>
-
     <string-array name="monday_full_body_duration">
         <item>00:20</item>
         <item>00:30</item>
@@ -28,6 +27,158 @@
         <item>00:20</item>
         <item>00:20</item>
         <item>00:30</item>
+    </string-array>
+    <string-array name="monday_full_body_description">
+        <item>Start with your feet together and your arms by your side, then jump up with your feet
+            apart and your hands overhead. Return to the start position then do the next rep. This
+            exercise provides a full body workout and works all your large muscle groups.</item>
+        <item>Stand with your feet shoulder width apart and your arms stretched forward, then lower
+            your body until your thighs are parallel with the floor. Your knees should be extended
+            in the same direction as your toes.Return to the start position and do the next rep.
+            This works the thighs, hips buttocks, quads, hamstrings and lower body</item>
+        <item>Start in the straight arm plank position. Then alternately lift and lower both legs
+            up and down.</item>
+        <item>Lie on the floor with your hands behind your ears. Raise your knees and close your
+            right elbow toward your left knee, then close your left elbow toward your right knee.
+            Return to the start position then do the next rep</item>
+        <item>Lie on your back with your knees up at a 90 degree angle and your hands behind your
+            head. Lift your upper body and thighs, and then stretch out. Return to start position
+            and do the next rep</item>
+        <item>Start on all fours with your knees under your butt and your hands directly under your
+            shoulders. Bend your elbows and do a push-up. Return to the start position and repeat</item>
+    </string-array>
+
+    <!-- TUESDAY FULL BODY-->
+    <string-array name="tuesday_full_body">
+        <item>CLOCKWISE ARM SWING</item>
+        <item>SIDE STEP JACKS</item>
+        <item>PUNCHES</item>
+        <item>OBLIQUE CRUNCHES - RIGHT</item>
+        <item>OBLIQUE CRUNCHES - LEFT</item>
+        <item>COBRA</item>
+    </string-array>
+    <string-array name="tuesday_full_body_duration">
+        <item>00:20</item>
+        <item>00:30</item>
+        <item>00:20</item>
+        <item>00:20</item>
+        <item>00:20</item>
+        <item>00:30</item>
+    </string-array>
+    <string-array name="tuesday_full_body_description">
+        <item>Stand on the floor with your arms extended straight to the side at shoulder height.
+            Move your arms clockwise in big fast circles. Try to do it fast as you can.</item>
+        <item>Stand upright with your feet together and arms by your sides. Step one foot out to
+            the side, raise your arms up and bring your hands overhead. Return, switch sides and
+            repeat the exercise.</item>
+        <item>Stand with one of your legs forward and your knees bent slightly. Bend your elbows and
+            clench your fist infront of your face. Extend one arm forward with the palm facing the
+            floor. Take the arm back and repeat with the other arm.</item>
+        <item>Stand with your right hand lifted overhead and left hand on your waist. Bring your
+            right elbow and knee to meet each other. Stretch out and repeat</item>
+        <item>Stand with your left hand lifted overhead and right hand on your waist. Bring your
+            left elbow and knee to meet each other. Stretch out and repeat</item>
+        <item>Lie down on your stomach and bend your elbows with your hands beneath your shoulders.
+            Then push your chest up off the ground as far as possible. Return to the start position
+            and repeat.</item>
+    </string-array>
+
+    <!-- WEDNESDAY FULL BODY-->
+    <string-array name="wednesday_full_body">
+        <item>DONKEY KICKS - LEFT</item>
+        <item>DONKEY KICKS - RIGHT</item>
+        <item>PLANK LEG UP</item>
+        <item>SPLIT SQUAT - LEFT</item>
+        <item>SPLIT SQUAT - RIGHT</item>
+        <item>BICYCLE CRUNCHES</item>
+    </string-array>
+    <string-array name="wednesday_full_body_duration">
+        <item>00:20</item>
+        <item>00:20</item>
+        <item>00:30</item>
+        <item>00:20</item>
+        <item>00:20</item>
+        <item>00:20</item>
+    </string-array>
+    <string-array name="wednesday_full_body_description">
+        <item>00:20</item>
+        <item>00:30</item>
+        <item>00:30</item>
+        <item>00:20</item>
+        <item>00:20</item>
+        <item>00:30</item>
+    </string-array>
+
+    <!-- THURSDAY FULL BODY // SAME AS MONDAY-->
+    <string-array name="thursday_full_body">
+        <item>JUMPING JACKS</item>
+        <item>SQUATS</item>
+        <item>PLANK LEG UP</item>
+        <item>BICYCLE CRUNCHES</item>
+        <item>REVERSE CRUNCHES</item>
+        <item>BOX PUSH-UPS</item>
+    </string-array>
+    <string-array name="thursday_full_body_duration">
+        <item>00:20</item>
+        <item>00:30</item>
+        <item>00:30</item>
+        <item>00:20</item>
+        <item>00:20</item>
+        <item>00:30</item>
+    </string-array>
+    <string-array name="thursday_full_body_description">
+        <item>Start with your feet together and your arms by your side, then jump up with your feet
+            apart and your hands overhead. Return to the start position then do the next rep. This
+            exercise provides a full body workout and works all your large muscle groups.</item>
+        <item>Stand with your feet shoulder width apart and your arms stretched forward, then lower
+            your body until your thighs are parallel with the floor. Your knees should be extended
+            in the same direction as your toes.Return to the start position and do the next rep.
+            This works the thighs, hips buttocks, quads, hamstrings and lower body</item>
+        <item>Start in the straight arm plank position. Then alternately lift and lower both legs
+            up and down.</item>
+        <item>Lie on the floor with your hands behind your ears. Raise your knees and close your
+            right elbow toward your left knee, then close your left elbow toward your right knee.
+            Return to the start position then do the next rep</item>
+        <item>Lie on your back with your knees up at a 90 degree angle and your hands behind your
+            head. Lift your upper body and thighs, and then stretch out. Return to start position
+            and do the next rep</item>
+        <item>Start on all fours with your knees under your butt and your hands directly under your
+            shoulders. Bend your elbows and do a push-up. Return to the start position and repeat</item>
+    </string-array>
+
+    <!-- FRIDAY FULL BODY // SAME AS TUESDAY-->
+    <string-array name="friday_full_body">
+        <item>CLOCKWISE ARM SWING</item>
+        <item>SIDE STEP JACKS</item>
+        <item>PUNCHES</item>
+        <item>OBLIQUE CRUNCHES - RIGHT</item>
+        <item>OBLIQUE CRUNCHES - LEFT</item>
+        <item>COBRA</item>
+    </string-array>
+    <string-array name="friday_full_body_duration">
+        <item>00:20</item>
+        <item>00:30</item>
+        <item>00:20</item>
+        <item>00:20</item>
+        <item>00:20</item>
+        <item>00:30</item>
+    </string-array>
+    <string-array name="friday_full_body_description">
+        <item>Stand on the floor with your arms extended straight to the side at shoulder height.
+            Move your arms clockwise in big fast circles. Try to do it fast as you can.</item>
+        <item>Stand upright with your feet together and arms by your sides. Step one foot out to
+            the side, raise your arms up and bring your hands overhead. Return, switch sides and
+            repeat the exercise.</item>
+        <item>Stand with one of your legs forward and your knees bent slightly. Bend your elbows and
+            clench your fist infront of your face. Extend one arm forward with the palm facing the
+            floor. Take the arm back and repeat with the other arm.</item>
+        <item>Stand with your right hand lifted overhead and left hand on your waist. Bring your
+            right elbow and knee to meet each other. Stretch out and repeat</item>
+        <item>Stand with your left hand lifted overhead and right hand on your waist. Bring your
+            left elbow and knee to meet each other. Stretch out and repeat</item>
+        <item>Lie down on your stomach and bend your elbows with your hands beneath your shoulders.
+            Then push your chest up off the ground as far as possible. Return to the start position
+            and repeat.</item>
     </string-array>
 
 </resources>
