@@ -13,11 +13,22 @@
         android:theme="@style/Theme.MyGymnasium"
         tools:targetApi="31">
         <activity
-            android:name=".Workouts.FullBody.FulBodyWednesday"
-            android:exported="false"
-            android:theme="@style/Theme.MyGymnasium.DarkActionBar."/>
+            android:name=".Workouts.FullBody.ExercisesView"
+            android:exported="false" />
         <activity
-            android:name=".Workouts.FullBody.FulBodyTuesday"
+            android:name=".Workouts.FullBody.FullBodyFriday"
+            android:exported="false"
+            android:theme="@style/Theme.MyGymnasium.DarkActionBar." />
+        <activity
+            android:name=".Workouts.FullBody.FullBodyThursday"
+            android:exported="false"
+            android:theme="@style/Theme.MyGymnasium.DarkActionBar." />
+        <activity
+            android:name=".Workouts.FullBody.FullBodyWednesday"
+            android:exported="false"
+            android:theme="@style/Theme.MyGymnasium.DarkActionBar." />
+        <activity
+            android:name=".Workouts.FullBody.FullBodyTuesday"
             android:exported="false"
             android:theme="@style/Theme.MyGymnasium.DarkActionBar." />
         <activity
