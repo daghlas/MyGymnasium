@@ -16,17 +16,20 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.daghlas.mygymnasium.Models.ExercisesModel;
 import com.daghlas.mygymnasium.R;
+import com.daghlas.mygymnasium.Workouts.FullBody.FullBodyInterface;
 
 import java.util.List;
 
 public class ExercisesAdapter extends RecyclerView.Adapter<ExercisesAdapter.MyViewHolder> {
 
+    private final FullBodyInterface fullBodyInterface;
     List <ExercisesModel> exercisesModelList;
     Context context;
 
-    public ExercisesAdapter(Context context, List<ExercisesModel> exercisesModelList) {
+    public ExercisesAdapter(Context context, List<ExercisesModel> exercisesModelList, FullBodyInterface fullBodyInterface) {
         this.context = context;
         this.exercisesModelList = exercisesModelList;
+        this.fullBodyInterface = fullBodyInterface;
     }
 
 
@@ -35,7 +38,7 @@ public class ExercisesAdapter extends RecyclerView.Adapter<ExercisesAdapter.MyVi
     public ExercisesAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(context);
         View view = inflater.inflate(R.layout.exercises_row_layout, parent, false);
-        return new ExercisesAdapter.MyViewHolder(view);
+        return new ExercisesAdapter.MyViewHolder(view, fullBodyInterface);
     }
 
     @Override
@@ -56,17 +59,25 @@ public class ExercisesAdapter extends RecyclerView.Adapter<ExercisesAdapter.MyVi
         ImageView sample;
 
         @SuppressLint("ResourceType")
-        public MyViewHolder(@NonNull View itemView) {
+        public MyViewHolder(@NonNull View itemView, FullBodyInterface fullBodyInterface) {
             super(itemView);
 
             exerciseName = itemView.findViewById(R.id.exerciseName);
             exerciseDuration = itemView.findViewById(R.id.exerciseDuration);
-
             sample = itemView.findViewById(R.id.sample);
-            //sample.setBackgroundResource(R.raw.sample);
 
-            //AnimationDrawable animationDrawable = (AnimationDrawable) sample.getBackground();
-            //animationDrawable.start();
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if(fullBodyInterface != null){
+                        int pos = getAdapterPosition();
+
+                        if(pos != RecyclerView.NO_POSITION){
+                            fullBodyInterface.onItemClick(pos);
+                        }
+                    }
+                }
+            });
 
         }
     }
