@@ -15,7 +15,7 @@ import com.daghlas.mygymnasium.Routines.FullBodyRoutines;
 
 public class FullBodyWorkout extends AppCompatActivity {
 
-    Button monday;
+    Button monday, tuesday, wednesday, thursday, friday;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +40,45 @@ public class FullBodyWorkout extends AppCompatActivity {
             }
         });
 
+        tuesday = findViewById(R.id.startTuesday);
+        tuesday.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(FullBodyWorkout.this, FullBodyTuesday.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        wednesday = findViewById(R.id.startWednesday);
+        wednesday.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(FullBodyWorkout.this, FullBodyWednesday.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        thursday = findViewById(R.id.startThursday);
+        thursday.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(FullBodyWorkout.this, FullBodyThursday.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        friday = findViewById(R.id.startFriday);
+        friday.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(FullBodyWorkout.this, FullBodyFriday.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
 
     @Override
