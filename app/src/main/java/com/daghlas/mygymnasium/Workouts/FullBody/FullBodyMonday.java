@@ -18,7 +18,7 @@ import com.daghlas.mygymnasium.Routines.FullBodyRoutines;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FullBodyMonday extends AppCompatActivity {
+public class FullBodyMonday extends AppCompatActivity implements FullBodyInterface{
 
     RecyclerView recyclerView;
     ExercisesAdapter adapter;
@@ -45,7 +45,7 @@ public class FullBodyMonday extends AppCompatActivity {
 
         recyclerView = findViewById(R.id.recyclerView);
         exercisesModelList = new ArrayList<>();
-        adapter = new ExercisesAdapter(this, exercisesModelList);
+        adapter = new ExercisesAdapter(this, exercisesModelList, this);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
@@ -55,9 +55,10 @@ public class FullBodyMonday extends AppCompatActivity {
     private void setUpExercisesModel() {
         String[] exerciseName = getResources().getStringArray(R.array.monday_full_body);
         String[] exerciseDuration = getResources().getStringArray(R.array.monday_full_body_duration);
+        String[] exerciseDescription = getResources().getStringArray(R.array.monday_full_body_description);
 
         for (int i = 0; i < exerciseName.length; i++) {
-            exercisesModelList.add(new ExercisesModel(exerciseName[i], exerciseDuration[i], exerciseImage[i]));
+            exercisesModelList.add(new ExercisesModel(exerciseName[i], exerciseDuration[i], exerciseDescription[i],exerciseImage[i]));
         }
     }
 
@@ -73,5 +74,17 @@ public class FullBodyMonday extends AppCompatActivity {
         startActivity(intent);
         finish();
         super.onBackPressed();
+    }
+
+    @Override
+    public void onItemClick(int position) {
+        Intent intent = new Intent(FullBodyMonday.this, ExercisesView.class);
+
+        intent.putExtra("NAME", exercisesModelList.get(position).getExercise_name());
+        intent.putExtra("DURATION", exercisesModelList.get(position).getDuration());
+        intent.putExtra("DESCRIPTION", exercisesModelList.get(position).getDescription());
+        intent.putExtra("IMAGE", exercisesModelList.get(position).getImage());
+
+        startActivity(intent);
     }
 }
