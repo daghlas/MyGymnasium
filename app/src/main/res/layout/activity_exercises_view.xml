@@ -11,27 +11,31 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/_25sdp"
-        android:layout_marginTop="@dimen/_25sdp"
         android:text="EXERCISE NAME"
-        android:textSize="@dimen/_20sdp"
         android:textColor="@color/blue"
+        android:textSize="@dimen/_18sdp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.053" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_15sdp"
         android:layout_marginHorizontal="@dimen/_20sdp"
-        app:cardCornerRadius="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15sdp"
         app:cardBackgroundColor="@color/blue_grey"
+        app:cardCornerRadius="@dimen/_15sdp"
         app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.313"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/exerciseName" >
+        app:layout_constraintTop_toBottomOf="@id/exerciseName"
+        app:layout_constraintVertical_bias="0.038">
 
         <pl.droidsonroids.gif.GifImageView
             android:id="@+id/exerciseGif"
@@ -45,38 +49,44 @@
         android:id="@+id/duration"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="DURATION "
         android:layout_margin="@dimen/_15sdp"
+        android:text="DURATION "
         android:textSize="@dimen/_17sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/cardView" />
+        app:layout_constraintTop_toBottomOf="@id/cardView"
+        app:layout_constraintVertical_bias="0.109" />
 
     <TextView
         android:id="@+id/exerciseDuration"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="00:00"
         android:layout_marginTop="@dimen/_10sdp"
-        android:textStyle="bold"
+        android:text="00:00"
         android:textColor="@color/blue"
         android:textSize="@dimen/_20sdp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/duration" />
+        app:layout_constraintTop_toBottomOf="@id/duration"
+        app:layout_constraintVertical_bias="0.073" />
 
     <TextView
         android:id="@+id/description"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="this is the exercise description string"
-        android:textSize="@dimen/_12sdp"
-        android:layout_marginTop="@dimen/_20sdp"
-        android:layout_marginHorizontal="@dimen/_50sdp"
+        android:text="this is the exercise description string this is the exercise description string this is the exercise description string this is the exercise description string this is the exercise description string "
         android:textAlignment="center"
+        android:textSize="@dimen/_12sdp"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/exerciseDuration" />
+        app:layout_constraintTop_toBottomOf="@id/exerciseDuration"
+        app:layout_constraintVertical_bias="0.191" />
 
     <Button
         android:id="@+id/start"
@@ -88,6 +98,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/description"
-        app:layout_constraintVertical_bias="0.9" />
+        app:layout_constraintVertical_bias="0.869" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
