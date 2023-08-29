@@ -263,4 +263,40 @@
             and repeat.</item>
     </string-array>
 
+    <!-- YOGA ACTIVITIES-->
+    <string-array name="yoga_name">
+        <item>CLOCKWISE ARM SWING</item>
+        <item>SIDE STEP JACKS</item>
+        <item>PUNCHES</item>
+        <item>OBLIQUE CRUNCHES - RIGHT</item>
+        <item>OBLIQUE CRUNCHES - LEFT</item>
+        <item>COBRA</item>
+    </string-array>
+    <string-array name="yoga_duration">
+        <item>00:20</item>
+        <item>00:30</item>
+        <item>00:20</item>
+        <item>00:20</item>
+        <item>00:20</item>
+        <item>00:30</item>
+    </string-array>
+    <string-array name="yoga_description">
+        <item>Stand on the floor with your arms extended straight to the side at shoulder height.
+            Move your arms clockwise in big fast circles. Try to do it fast as you can.</item>
+        <item>Stand upright with your feet together and arms by your sides. Step one foot out to
+            the side, raise your arms up and bring your hands overhead. Return, switch sides and
+            repeat the exercise.</item>
+        <item>Stand with one of your legs forward and your knees bent slightly. Bend your elbows and
+            clench your fist infront of your face. Extend one arm forward with the palm facing the
+            floor. Take the arm back and repeat with the other arm.</item>
+        <item>Stand with your right hand lifted overhead and left hand on your waist. Bring your
+            right elbow and knee to meet each other. Stretch out and repeat</item>
+        <item>Stand with your left hand lifted overhead and right hand on your waist. Bring your
+            left elbow and knee to meet each other. Stretch out and repeat</item>
+        <item>Lie down on your stomach and bend your elbows with your hands beneath your shoulders.
+            Then push your chest up off the ground as far as possible. Return to the start position
+            and repeat.</item>
+    </string-array>
+
+
 </resources>
