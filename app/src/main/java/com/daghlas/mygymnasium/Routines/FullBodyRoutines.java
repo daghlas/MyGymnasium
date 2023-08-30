@@ -16,7 +16,7 @@ import com.daghlas.mygymnasium.Workouts.FullBody.FullBodyWorkout;
 
 public class FullBodyRoutines extends AppCompatActivity {
 
-    Button startWorkout, startPreWorkout, startPostWorkout;
+    Button startWorkout, startPreWorkout, startPostWorkout, startYoga;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,6 +54,15 @@ public class FullBodyRoutines extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(FullBodyRoutines.this, PostWorkoutRoutines.class);
+                startActivity(intent);
+                //finish();
+            }
+        });
+        startYoga = findViewById(R.id.startYoga);
+        startYoga.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(FullBodyRoutines.this, YogaRoutines.class);
                 startActivity(intent);
                 //finish();
             }
