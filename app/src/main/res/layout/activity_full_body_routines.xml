@@ -164,6 +164,7 @@
                     android:layout_marginTop="@dimen/_5sdp"/>
 
                 <Button
+                    android:id="@+id/startYoga"
                     android:layout_width="@dimen/_120sdp"
                     android:layout_height="@dimen/_28sdp"
                     android:text="START"
