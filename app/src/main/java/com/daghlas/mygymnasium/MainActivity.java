@@ -22,6 +22,7 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.daghlas.mygymnasium.Routines.ButtLegRoutines;
 import com.daghlas.mygymnasium.Routines.FullBodyRoutines;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -184,6 +185,16 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, FullBodyRoutines.class);
+                startActivity(intent);
+                //finish();
+            }
+        });
+
+        buttLegsRoutine = findViewById(R.id.cardView3);
+        buttLegsRoutine.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ButtLegRoutines.class);
                 startActivity(intent);
                 //finish();
             }
