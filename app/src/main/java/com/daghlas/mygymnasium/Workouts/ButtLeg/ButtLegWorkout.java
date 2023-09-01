@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.text.Html;
+import android.widget.Button;
 
 import com.daghlas.mygymnasium.R;
 import com.daghlas.mygymnasium.Routines.ButtLegRoutines;
@@ -14,6 +15,8 @@ import com.daghlas.mygymnasium.Routines.FullBodyRoutines;
 import com.daghlas.mygymnasium.Workouts.FullBody.FullBodyWorkout;
 
 public class ButtLegWorkout extends AppCompatActivity {
+
+    Button monday, tuesday, wednesday, thursday, friday;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
