@@ -298,5 +298,42 @@
             and repeat.</item>
     </string-array>
 
+    <!-- MONDAY BUTT & LEG-->
+    <string-array name="monday_butt_leg">
+        <item>JUMPING JACKS</item>
+        <item>SQUATS</item>
+        <item>PLANK LEG UP</item>
+        <item>BICYCLE CRUNCHES</item>
+        <item>REVERSE CRUNCHES</item>
+        <item>BOX PUSH-UPS</item>
+    </string-array>
+    <string-array name="monday_butt_leg_duration">
+        <item>00:20</item>
+        <item>00:30</item>
+        <item>00:30</item>
+        <item>00:20</item>
+        <item>00:20</item>
+        <item>00:30</item>
+    </string-array>
+    <string-array name="monday_butt_leg_description">
+        <item>Start with your feet together and your arms by your side, then jump up with your feet
+            apart and your hands overhead. Return to the start position then do the next rep. This
+            exercise provides a full body workout and works all your large muscle groups.</item>
+        <item>Stand with your feet shoulder width apart and your arms stretched forward, then lower
+            your body until your thighs are parallel with the floor. Your knees should be extended
+            in the same direction as your toes.Return to the start position and do the next rep.
+            This works the thighs, hips buttocks, quads, hamstrings and lower body</item>
+        <item>Start in the straight arm plank position. Then alternately lift and lower both legs
+            up and down.</item>
+        <item>Lie on the floor with your hands behind your ears. Raise your knees and close your
+            right elbow toward your left knee, then close your left elbow toward your right knee.
+            Return to the start position then do the next rep</item>
+        <item>Lie on your back with your knees up at a 90 degree angle and your hands behind your
+            head. Lift your upper body and thighs, and then stretch out. Return to start position
+            and do the next rep</item>
+        <item>Start on all fours with your knees under your butt and your hands directly under your
+            shoulders. Bend your elbows and do a push-up. Return to the start position and repeat</item>
+    </string-array>
+
 
 </resources>
