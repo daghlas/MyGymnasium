@@ -7,11 +7,13 @@ import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.text.Html;
+import android.view.View;
 import android.widget.Button;
 
 import com.daghlas.mygymnasium.R;
 import com.daghlas.mygymnasium.Routines.ButtLegRoutines;
 import com.daghlas.mygymnasium.Routines.FullBodyRoutines;
+import com.daghlas.mygymnasium.Workouts.FullBody.FullBodyMonday;
 import com.daghlas.mygymnasium.Workouts.FullBody.FullBodyWorkout;
 
 public class ButtLegWorkout extends AppCompatActivity {
@@ -30,6 +32,16 @@ public class ButtLegWorkout extends AppCompatActivity {
             getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.blue)));
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
+
+        monday = findViewById(R.id.startMonday);
+        monday.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ButtLegWorkout.this, ButtLegMonday.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
     }
 
