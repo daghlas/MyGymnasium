@@ -2,9 +2,6 @@ package com.daghlas.mygymnasium.Adapters;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
-import android.graphics.drawable.AnimatedImageDrawable;
-import android.graphics.drawable.AnimationDrawable;
-import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,20 +13,20 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.daghlas.mygymnasium.Models.ExercisesModel;
 import com.daghlas.mygymnasium.R;
-import com.daghlas.mygymnasium.Workouts.FullBody.FullBodyInterface;
+import com.daghlas.mygymnasium.Workouts.WorkoutsInterface;
 
 import java.util.List;
 
 public class ExercisesAdapter extends RecyclerView.Adapter<ExercisesAdapter.MyViewHolder> {
 
-    private final FullBodyInterface fullBodyInterface;
+    private final WorkoutsInterface workoutsInterface;
     List <ExercisesModel> exercisesModelList;
     Context context;
 
-    public ExercisesAdapter(Context context, List<ExercisesModel> exercisesModelList, FullBodyInterface fullBodyInterface) {
+    public ExercisesAdapter(Context context, List<ExercisesModel> exercisesModelList, WorkoutsInterface workoutsInterface) {
         this.context = context;
         this.exercisesModelList = exercisesModelList;
-        this.fullBodyInterface = fullBodyInterface;
+        this.workoutsInterface = workoutsInterface;
     }
 
 
@@ -38,7 +35,7 @@ public class ExercisesAdapter extends RecyclerView.Adapter<ExercisesAdapter.MyVi
     public ExercisesAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(context);
         View view = inflater.inflate(R.layout.exercises_row_layout, parent, false);
-        return new ExercisesAdapter.MyViewHolder(view, fullBodyInterface);
+        return new ExercisesAdapter.MyViewHolder(view, workoutsInterface);
     }
 
     @Override
@@ -59,7 +56,7 @@ public class ExercisesAdapter extends RecyclerView.Adapter<ExercisesAdapter.MyVi
         ImageView sample;
 
         @SuppressLint("ResourceType")
-        public MyViewHolder(@NonNull View itemView, FullBodyInterface fullBodyInterface) {
+        public MyViewHolder(@NonNull View itemView, WorkoutsInterface workoutsInterface) {
             super(itemView);
 
             exerciseName = itemView.findViewById(R.id.exerciseName);
@@ -69,11 +66,11 @@ public class ExercisesAdapter extends RecyclerView.Adapter<ExercisesAdapter.MyVi
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    if(fullBodyInterface != null){
+                    if(workoutsInterface != null){
                         int pos = getAdapterPosition();
 
                         if(pos != RecyclerView.NO_POSITION){
-                            fullBodyInterface.onItemClick(pos);
+                            workoutsInterface.onItemClick(pos);
                         }
                     }
                 }
