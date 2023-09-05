@@ -11,18 +11,15 @@ import android.os.Bundle;
 import android.text.Html;
 
 import com.daghlas.mygymnasium.Adapters.ExercisesAdapter;
-import com.daghlas.mygymnasium.MainActivity;
 import com.daghlas.mygymnasium.Models.ExercisesModel;
 import com.daghlas.mygymnasium.R;
 import com.daghlas.mygymnasium.Workouts.FullBody.ExercisesView;
-import com.daghlas.mygymnasium.Workouts.FullBody.FullBodyInterface;
-import com.daghlas.mygymnasium.Workouts.FullBody.FullBodyMonday;
-import com.daghlas.mygymnasium.Workouts.FullBody.FullBodyWorkout;
+import com.daghlas.mygymnasium.Workouts.WorkoutsInterface;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class PreWorkoutRoutines extends AppCompatActivity implements FullBodyInterface {
+public class PreWorkoutRoutines extends AppCompatActivity implements WorkoutsInterface {
 
     RecyclerView recyclerView;
     ExercisesAdapter adapter;
