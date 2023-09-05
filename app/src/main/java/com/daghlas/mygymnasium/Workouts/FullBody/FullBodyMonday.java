@@ -13,12 +13,12 @@ import android.text.Html;
 import com.daghlas.mygymnasium.Adapters.ExercisesAdapter;
 import com.daghlas.mygymnasium.Models.ExercisesModel;
 import com.daghlas.mygymnasium.R;
-import com.daghlas.mygymnasium.Routines.FullBodyRoutines;
+import com.daghlas.mygymnasium.Workouts.WorkoutsInterface;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class FullBodyMonday extends AppCompatActivity implements FullBodyInterface{
+public class FullBodyMonday extends AppCompatActivity implements WorkoutsInterface {
 
     RecyclerView recyclerView;
     ExercisesAdapter adapter;
