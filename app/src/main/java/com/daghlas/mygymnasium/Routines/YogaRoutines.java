@@ -14,12 +14,12 @@ import com.daghlas.mygymnasium.Adapters.ExercisesAdapter;
 import com.daghlas.mygymnasium.Models.ExercisesModel;
 import com.daghlas.mygymnasium.R;
 import com.daghlas.mygymnasium.Workouts.FullBody.ExercisesView;
-import com.daghlas.mygymnasium.Workouts.FullBody.FullBodyInterface;
+import com.daghlas.mygymnasium.Workouts.WorkoutsInterface;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class YogaRoutines extends AppCompatActivity implements FullBodyInterface {
+public class YogaRoutines extends AppCompatActivity implements WorkoutsInterface {
 
     RecyclerView recyclerView;
     ExercisesAdapter adapter;
