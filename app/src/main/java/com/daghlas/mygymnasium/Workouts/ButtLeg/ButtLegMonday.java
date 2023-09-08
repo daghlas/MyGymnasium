@@ -38,6 +38,7 @@ public class ButtLegMonday extends AppCompatActivity implements WorkoutsInterfac
         setContentView(R.layout.activity_butt_leg_monday);
 
         getWindow().setStatusBarColor(ContextCompat.getColor(this, R.color.blue));
+
         if (getSupportActionBar() != null) {
             getSupportActionBar().setTitle(Html.fromHtml("<font color='#FFFFFFFF'>Monday - Butt & Legs</font>"));
             getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.blue)));
