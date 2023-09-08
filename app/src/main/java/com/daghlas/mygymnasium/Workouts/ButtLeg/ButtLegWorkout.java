@@ -26,6 +26,7 @@ public class ButtLegWorkout extends AppCompatActivity {
         setContentView(R.layout.activity_butt_leg_workout);
 
         getWindow().setStatusBarColor(ContextCompat.getColor(this, R.color.blue));
+
         if (getSupportActionBar() != null) {
             getSupportActionBar().setTitle(Html.fromHtml("<font color='#FFFFFFFF'>Butt & Leg Workouts</font>"));
             getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.blue)));
