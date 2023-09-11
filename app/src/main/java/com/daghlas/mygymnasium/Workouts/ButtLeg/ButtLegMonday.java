@@ -89,5 +89,4 @@ public class ButtLegMonday extends AppCompatActivity implements WorkoutsInterfac
 
         startActivity(intent);
     }
-
 }
