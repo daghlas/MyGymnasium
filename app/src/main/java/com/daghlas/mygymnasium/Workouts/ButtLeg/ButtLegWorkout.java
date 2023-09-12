@@ -14,7 +14,6 @@ import com.daghlas.mygymnasium.R;
 import com.daghlas.mygymnasium.Routines.ButtLegRoutines;
 import com.daghlas.mygymnasium.Routines.FullBodyRoutines;
 import com.daghlas.mygymnasium.Workouts.FullBody.FullBodyMonday;
-import com.daghlas.mygymnasium.Workouts.FullBody.FullBodyWorkout;
 
 public class ButtLegWorkout extends AppCompatActivity {
 
