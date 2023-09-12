@@ -42,6 +42,7 @@ public class ButtLegWorkout extends AppCompatActivity {
                 finish();
             }
         });
+
     }
 
     @Override
