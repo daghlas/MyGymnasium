@@ -52,6 +52,7 @@ public class ButtLegMonday extends AppCompatActivity implements WorkoutsInterfac
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         setUpExercisesModel();
+
     }
 
     private void setUpExercisesModel() {
