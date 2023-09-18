@@ -100,6 +100,8 @@ public class MainActivity extends AppCompatActivity {
                     createReminder.setVisibility(View.GONE);
                     overlay.setVisibility(View.GONE);
                     navigationView.setVisibility(View.VISIBLE);
+                    fullBodyRoutine.setEnabled(true);
+                    buttLegsRoutine.setEnabled(true);
                 } else if (createReminder.getVisibility() == View.GONE && currentValue > 0) {
                     if (drinking < currentValue) {
                         drinking++;
@@ -109,7 +111,8 @@ public class MainActivity extends AppCompatActivity {
                         int denominator = Integer.parseInt(glassesRemaining.getText().toString().trim());
                         progressBar.setMax(denominator);
                         progressBar.setProgress(numerator);
-
+                        fullBodyRoutine.setEnabled(true);
+                        buttLegsRoutine.setEnabled(true);
                     } else if (drinking == currentValue) {
                         glassesDrunk.setText(String.valueOf(drinking));
                         Toast.makeText(MainActivity.this, "Well Done! Milestone complete", Toast.LENGTH_LONG).show();
@@ -122,6 +125,8 @@ public class MainActivity extends AppCompatActivity {
                     navigationView.setVisibility(View.GONE);
                     scrollView.setEnabled(false);
                     scrollView.setVerticalScrollBarEnabled(false);
+                    fullBodyRoutine.setEnabled(false);
+                    buttLegsRoutine.setEnabled(false);
                 }
             }
         });
@@ -163,6 +168,8 @@ public class MainActivity extends AppCompatActivity {
                     glassesRemaining.setText(String.valueOf(currentValue));
                     create.setText(R.string.drink);
                     reset.setVisibility(View.VISIBLE);
+                    fullBodyRoutine.setEnabled(true);
+                    buttLegsRoutine.setEnabled(true);
                 }
             }
         });
@@ -177,6 +184,8 @@ public class MainActivity extends AppCompatActivity {
                 glassesDrunk.setText("0");
                 progressBar.setProgress(0);
                 create.setText(R.string.drink);
+                fullBodyRoutine.setEnabled(false);
+                buttLegsRoutine.setEnabled(false);
             }
         });
 
@@ -208,7 +217,8 @@ public class MainActivity extends AppCompatActivity {
             createReminder.setVisibility(View.GONE);
             overlay.setVisibility(View.GONE);
             navigationView.setVisibility(View.VISIBLE);
-
+            fullBodyRoutine.setEnabled(true);
+            buttLegsRoutine.setEnabled(true);
         } else {
             super.onBackPressed();
         }
