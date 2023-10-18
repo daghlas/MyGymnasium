@@ -55,7 +55,7 @@
         <item>PUNCHES</item>
         <item>OBLIQUE CRUNCHES - RIGHT</item>
         <item>OBLIQUE CRUNCHES - LEFT</item>
-        <item>COBRA</item>
+        <item>COBRAS</item>
     </string-array>
     <string-array name="tuesday_full_body_duration">
         <item>00:20</item>
@@ -165,7 +165,7 @@
         <item>PUNCHES</item>
         <item>OBLIQUE CRUNCHES - RIGHT</item>
         <item>OBLIQUE CRUNCHES - LEFT</item>
-        <item>COBRA</item>
+        <item>COBRAS</item>
     </string-array>
     <string-array name="friday_full_body_duration">
         <item>00:20</item>
@@ -196,11 +196,11 @@
     <!-- PRE-WORKOUT ACTIVITIES-->
     <string-array name="pre_workout_name">
         <item>CLOCKWISE ARM SWING</item>
-        <item>SIDE STEP JACKS</item>
+        <item>LUNGES</item>
         <item>PUNCHES</item>
-        <item>OBLIQUE CRUNCHES - RIGHT</item>
-        <item>OBLIQUE CRUNCHES - LEFT</item>
-        <item>COBRA</item>
+        <item>SQUATS</item>
+        <item>SIDE STEP JACKS</item>
+        <item>CAT COW POSE</item>
     </string-array>
     <string-array name="pre_workout_duration">
         <item>00:20</item>
@@ -213,32 +213,35 @@
     <string-array name="pre_workout_description">
         <item>Stand on the floor with your arms extended straight to the side at shoulder height.
             Move your arms clockwise in big fast circles. Try to do it fast as you can.</item>
-        <item>Stand upright with your feet together and arms by your sides. Step one foot out to
-            the side, raise your arms up and bring your hands overhead. Return, switch sides and
-            repeat the exercise.</item>
+        <item>Stand with your feet shoulder width apart and your hands on your hips. Take a step
+            forward with your right leg and lower your body until your right thigh is parallel with
+            the floor. Then return and switch to the other leg.</item>
         <item>Stand with one of your legs forward and your knees bent slightly. Bend your elbows and
-            clench your fist infront of your face. Extend one arm forward with the palm facing the
+            clench your fist in front of your face. Extend one arm forward with the palm facing the
             floor. Take the arm back and repeat with the other arm.</item>
-        <item>Stand with your right hand lifted overhead and left hand on your waist. Bring your
-            right elbow and knee to meet each other. Stretch out and repeat</item>
+        <item>Stand with your feet shoulder width apart and your arms stretched forward, then lower
+            your body until your thighs are parallel with the floor. Your knees should be extended
+            in the same direction as your toes.Return to the start position and do the next rep.
+            This works the thighs, hips buttocks, quads, hamstrings and lower body</item>
         <item>Stand with your left hand lifted overhead and right hand on your waist. Bring your
             left elbow and knee to meet each other. Stretch out and repeat</item>
-        <item>Lie down on your stomach and bend your elbows with your hands beneath your shoulders.
-            Then push your chest up off the ground as far as possible. Return to the start position
-            and repeat.</item>
+        <item>Stand on all fours with your knees under your butt and your hands directly under your
+            shoulders. Then take a breath and make your belly fall down, shoulders roll back and
+            head come up towards the ceiling. As you exhale, curve your back upward and let your
+            head come down. Repeat the exercise.</item>
     </string-array>
 
     <!-- POST-WORKOUT ACTIVITIES-->
     <string-array name="post_workout_name">
+        <item>BUTT BRIDGE</item>
         <item>CLOCKWISE ARM SWING</item>
-        <item>SIDE STEP JACKS</item>
         <item>PUNCHES</item>
-        <item>OBLIQUE CRUNCHES - RIGHT</item>
-        <item>OBLIQUE CRUNCHES - LEFT</item>
-        <item>COBRA</item>
+        <item>SIDE STEP JACKS</item>
+        <item>CAT COW POSE</item>
+        <item>COBRAS</item>
     </string-array>
     <string-array name="post_workout_duration">
-        <item>00:20</item>
+        <item>00:40</item>
         <item>00:30</item>
         <item>00:20</item>
         <item>00:20</item>
@@ -246,18 +249,19 @@
         <item>00:30</item>
     </string-array>
     <string-array name="post_workout_description">
+        <item>Lie on your back with knees bent and feet flat on the floor. Put your arms flat at
+            your sides. Then lift your butt up and down.</item>
         <item>Stand on the floor with your arms extended straight to the side at shoulder height.
             Move your arms clockwise in big fast circles. Try to do it fast as you can.</item>
-        <item>Stand upright with your feet together and arms by your sides. Step one foot out to
-            the side, raise your arms up and bring your hands overhead. Return, switch sides and
-            repeat the exercise.</item>
         <item>Stand with one of your legs forward and your knees bent slightly. Bend your elbows and
-            clench your fist infront of your face. Extend one arm forward with the palm facing the
+            clench your fist in front of your face. Extend one arm forward with the palm facing the
             floor. Take the arm back and repeat with the other arm.</item>
-        <item>Stand with your right hand lifted overhead and left hand on your waist. Bring your
-            right elbow and knee to meet each other. Stretch out and repeat</item>
         <item>Stand with your left hand lifted overhead and right hand on your waist. Bring your
             left elbow and knee to meet each other. Stretch out and repeat</item>
+        <item>Stand on all fours with your knees under your butt and your hands directly under your
+            shoulders. Then take a breath and make your belly fall down, shoulders roll back and
+            head come up towards the ceiling. As you exhale, curve your back upward and let your
+            head come down. Repeat the exercise.</item>
         <item>Lie down on your stomach and bend your elbows with your hands beneath your shoulders.
             Then push your chest up off the ground as far as possible. Return to the start position
             and repeat.</item>
@@ -270,7 +274,7 @@
         <item>PUNCHES</item>
         <item>OBLIQUE CRUNCHES - RIGHT</item>
         <item>OBLIQUE CRUNCHES - LEFT</item>
-        <item>COBRA</item>
+        <item>COBRAS</item>
     </string-array>
     <string-array name="yoga_duration">
         <item>00:30</item>
