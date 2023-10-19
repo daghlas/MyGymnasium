@@ -10,9 +10,9 @@
         android:id="@+id/cardView7"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_90sdp"
+        android:layout_marginTop="-20dp"
         app:cardBackgroundColor="@color/blue"
         app:cardCornerRadius="@dimen/_20sdp"
-        android:layout_marginTop="-20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -23,8 +23,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginHorizontal="@dimen/_25sdp"
-            android:text="EXERCISE NAME"
             android:layout_marginTop="@dimen/_15sdp"
+            android:text="EXERCISE NAME"
             android:textColor="@color/white"
             android:textSize="@dimen/_16sdp"
             android:textStyle="bold" />
