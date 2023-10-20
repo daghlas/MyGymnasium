@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         getWindow().setStatusBarColor(ContextCompat.getColor(this, R.color.blue));
 
         if (getSupportActionBar() != null) {
-            getSupportActionBar().setTitle(Html.fromHtml("<font color='#FFFFFFFF'>Ashley's GYM App</font>"));
+            getSupportActionBar().setTitle(Html.fromHtml("<font color='#FFFFFFFF'>k.d_kai's GYM App</font>"));
             getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.blue)));
         }
 
