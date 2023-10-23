@@ -60,12 +60,12 @@
         android:id="@+id/unitPicker"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
         android:layout_marginStart="@dimen/_12sdp"
+        android:layout_toEndOf="@id/weightPicker"
         android:scaleX="1.5"
         android:scaleY="1.5"
-        android:theme="@style/UnitPickerText"
-        android:layout_centerVertical="true"
-        android:layout_toEndOf="@id/weightPicker"/>
+        android:theme="@style/UnitPickerText" />
 
     <Button
         android:id="@+id/next"
