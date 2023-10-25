@@ -445,9 +445,171 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/meal">
 
-                <ImageView
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/dayOfWeek"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MONDAY"
+                        android:textStyle="bold"
+                        android:layout_marginVertical="@dimen/_5sdp"
+                        android:textSize="@dimen/_10sdp"
+                        android:layout_gravity="center"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/blue"
+                        android:layout_marginHorizontal="@dimen/_15sdp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"/>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Morning"
+                                android:textColor="@color/blue"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/_13sdp"
+                                android:padding="@dimen/_5sdp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Morning"
+                                android:textStyle="bold"
+                                android:layout_gravity="center"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Morning"
+                                android:textStyle="bold"
+                                android:layout_gravity="center"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Morning"
+                                android:textStyle="bold"
+                                android:layout_gravity="center"/>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"/>
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginVertical="@dimen/_8sdp"
+                            android:background="@color/blue"/>
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Afternoon"
+                                android:textColor="@color/blue"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/_13sdp"
+                                android:padding="@dimen/_5sdp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Afternoon"
+                                android:textStyle="bold"
+                                android:layout_gravity="center"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Afternoon"
+                                android:textStyle="bold"
+                                android:layout_gravity="center"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Afternoon"
+                                android:textStyle="bold"
+                                android:layout_gravity="center"/>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"/>
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginVertical="@dimen/_8sdp"
+                            android:background="@color/blue"/>
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Evening"
+                                android:textColor="@color/blue"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/_13sdp"
+                                android:padding="@dimen/_5sdp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Evening"
+                                android:textStyle="bold"
+                                android:layout_gravity="center"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Evening"
+                                android:textStyle="bold"
+                                android:layout_gravity="center"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Evening"
+                                android:textStyle="bold"
+                                android:layout_gravity="center"/>
+                        </LinearLayout>
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
 
             </androidx.cardview.widget.CardView>
 
