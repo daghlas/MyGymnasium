@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.text.Html;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.daghlas.mygymnasium.R;
 import com.daghlas.mygymnasium.Workouts.ButtLeg.ButtLegWorkout;
@@ -62,8 +63,9 @@ public class ButtLegRoutines extends AppCompatActivity {
         startYoga.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ButtLegRoutines.this, YogaRoutines.class);
-                startActivity(intent);
+                Toast.makeText(ButtLegRoutines.this, "Coming soon", Toast.LENGTH_SHORT).show();
+                //Intent intent = new Intent(ButtLegRoutines.this, YogaRoutines.class);
+                //startActivity(intent);
                 //finish();
             }
         });
