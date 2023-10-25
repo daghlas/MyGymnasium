@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.text.Html;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.daghlas.mygymnasium.MainActivity;
 import com.daghlas.mygymnasium.R;
@@ -62,8 +63,9 @@ public class FullBodyRoutines extends AppCompatActivity {
         startYoga.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(FullBodyRoutines.this, YogaRoutines.class);
-                startActivity(intent);
+                Toast.makeText(FullBodyRoutines.this, "Coming Soon", Toast.LENGTH_SHORT).show();
+                //Intent intent = new Intent(FullBodyRoutines.this, YogaRoutines.class);
+                //startActivity(intent);
                 //finish();
             }
         });
