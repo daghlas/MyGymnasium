@@ -27,12 +27,14 @@ import com.daghlas.mygymnasium.Routines.ButtLegRoutines;
 import com.daghlas.mygymnasium.Routines.FullBodyRoutines;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Locale;
 
 
 public class MainActivity extends AppCompatActivity {
 
-    TextView greeting_tag, showGlass, startToday, glassesRemaining, glassesDrunk;
+    TextView greeting_tag, showGlass, startToday, glassesRemaining, glassesDrunk, dayOfWeek;
     ImageView greeting_image;
     BottomNavigationView navigationView;
     Button create, reset, setGlass;
@@ -64,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
         waterProgress = findViewById(R.id.waterProgress);
         glassesRemaining = findViewById(R.id.remaining);
         glassesDrunk = findViewById(R.id.drunk);
+        dayOfWeek = findViewById(R.id.dayOfWeek);
 
         //Greeting tag - set according to time of day
         Calendar c = Calendar.getInstance();
@@ -82,6 +85,11 @@ public class MainActivity extends AppCompatActivity {
             greeting_tag.setText(R.string.good_night);
             greeting_image.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.ic_good_night));
         }
+
+        //setting current day of the week to display on meal plan layout
+        SimpleDateFormat dateFormat = new SimpleDateFormat("EEEE", Locale.getDefault());
+        String currentDayOfWeek = dateFormat.format(c.getTime()).toUpperCase();
+        dayOfWeek.setText(currentDayOfWeek);
 
         create = findViewById(R.id.create);
         reset = findViewById(R.id.reset);
