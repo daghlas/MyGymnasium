@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 import androidx.core.content.ContextCompat;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.drawable.ColorDrawable;
@@ -35,6 +36,9 @@ import java.util.Locale;
 public class MainActivity extends AppCompatActivity {
 
     TextView greeting_tag, showGlass, startToday, glassesRemaining, glassesDrunk, dayOfWeek;
+    TextView morningMeal1, morningMeal2, morningMeal3;
+    TextView afternoonMeal1, afternoonMeal2, afternoonMeal3;
+    TextView eveningMeal1, eveningMeal2, eveningMeal3;
     ImageView greeting_image;
     BottomNavigationView navigationView;
     Button create, reset, setGlass;
@@ -86,10 +90,24 @@ public class MainActivity extends AppCompatActivity {
             greeting_image.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.ic_good_night));
         }
 
+        morningMeal1 = findViewById(R.id.morning1);
+        morningMeal2 = findViewById(R.id.morning2);
+        morningMeal3 = findViewById(R.id.morning3);
+
+        afternoonMeal1 = findViewById(R.id.afternoon1);
+        afternoonMeal2 = findViewById(R.id.afternoon2);
+        afternoonMeal3 = findViewById(R.id.afternoon3);
+
+        eveningMeal1 = findViewById(R.id.evening1);
+        eveningMeal2 = findViewById(R.id.evening2);
+        eveningMeal3 = findViewById(R.id.evening3);
+
         //setting current day of the week to display on meal plan layout
         SimpleDateFormat dateFormat = new SimpleDateFormat("EEEE", Locale.getDefault());
         String currentDayOfWeek = dateFormat.format(c.getTime()).toUpperCase();
         dayOfWeek.setText(currentDayOfWeek);
+        //method to set meal plan layout
+        mealPlanLayout();
 
         create = findViewById(R.id.create);
         reset = findViewById(R.id.reset);
@@ -238,6 +256,28 @@ public class MainActivity extends AppCompatActivity {
         MenuInflater menuInflater = getMenuInflater();
         menuInflater.inflate(R.menu.options_menu, menu);
         return super.onCreateOptionsMenu(menu);
+    }
+
+    @SuppressLint("SetTextI18n")
+    public void mealPlanLayout(){
+        Calendar c = Calendar.getInstance();
+        SimpleDateFormat dateFormat = new SimpleDateFormat("EEEE", Locale.getDefault());
+        String currentDayOfWeek = dateFormat.format(c.getTime()).toUpperCase();
+        //dayOfWeek.setText(currentDayOfWeek);
+
+        if(currentDayOfWeek.equals("THURSDAY")){
+            morningMeal1.setText("Porridge");
+            morningMeal2.setText("Mandazi");
+            morningMeal3.setText("Banana");
+
+            afternoonMeal1.setText("Ugali");
+            afternoonMeal2.setText("Vegetables");
+            afternoonMeal3.setText("Beef");
+
+            eveningMeal1.setText("Chapati");
+            eveningMeal2.setText("Beans");
+            eveningMeal3.setText("Fruit");
+        }
     }
 
 }
