@@ -489,18 +489,21 @@
                                 android:padding="@dimen/_5sdp"/>
 
                             <TextView
+                                android:id="@+id/morning1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Morning"
                                 android:textStyle="bold"
                                 android:layout_gravity="center"/>
                             <TextView
+                                android:id="@+id/morning2"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Morning"
                                 android:textStyle="bold"
                                 android:layout_gravity="center"/>
                             <TextView
+                                android:id="@+id/morning3"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Morning"
@@ -537,18 +540,21 @@
                                 android:padding="@dimen/_5sdp"/>
 
                             <TextView
+                                android:id="@+id/afternoon1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Afternoon"
                                 android:textStyle="bold"
                                 android:layout_gravity="center"/>
                             <TextView
+                                android:id="@+id/afternoon2"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Afternoon"
                                 android:textStyle="bold"
                                 android:layout_gravity="center"/>
                             <TextView
+                                android:id="@+id/afternoon3"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Afternoon"
@@ -585,18 +591,21 @@
                                 android:padding="@dimen/_5sdp"/>
 
                             <TextView
+                                android:id="@+id/evening1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Evening"
                                 android:textStyle="bold"
                                 android:layout_gravity="center"/>
                             <TextView
+                                android:id="@+id/evening2"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Evening"
                                 android:textStyle="bold"
                                 android:layout_gravity="center"/>
                             <TextView
+                                android:id="@+id/evening3"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Evening"
