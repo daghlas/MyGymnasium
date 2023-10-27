@@ -7,6 +7,7 @@ import androidx.cardview.widget.CardView;
 import androidx.core.content.ContextCompat;
 
 import android.annotation.SuppressLint;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.drawable.ColorDrawable;
@@ -45,7 +46,8 @@ public class MainActivity extends AppCompatActivity {
     LinearLayout createReminder, waterProgress;
     ScrollView scrollView;
     View overlay;
-    CardView cardView1, minusGlass, addGlass, fullBodyRoutine, buttLegsRoutine, absRoutine, armsRoutine;
+    CardView cardView1, minusGlass, addGlass, fullBodyRoutine, buttLegsRoutine, editMealPlan,
+            absRoutine, armsRoutine;
     ProgressBar progressBar;
     int currentValue = 0;
     int drinking = 0;
@@ -233,6 +235,33 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, ButtLegRoutines.class);
                 startActivity(intent);
                 //finish();
+            }
+        });
+
+        editMealPlan = findViewById(R.id.editMealPlan);
+        editMealPlan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+                builder.setTitle("Edit Meal Plan");
+                builder.setMessage("Customise this meal plan to match your own desired meal preferences " +
+                        "for each day.");
+                builder.setIcon(R.mipmap.ic_launcher);
+                builder.setCancelable(false);
+                builder.setPositiveButton("PROCEED", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        //method to set and save new meal plan
+                        dialog.dismiss();
+                        Toast.makeText(MainActivity.this, "Coming soon", Toast.LENGTH_SHORT).show();
+                    }
+                });
+                builder.setNegativeButton("CANCEL", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                    }
+                }).show();
             }
         });
 
