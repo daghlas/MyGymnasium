@@ -288,13 +288,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @SuppressLint("SetTextI18n")
-    public void mealPlanLayout(){
+    public void mealPlanLayout() {
         Calendar c = Calendar.getInstance();
         SimpleDateFormat dateFormat = new SimpleDateFormat("EEEE", Locale.getDefault());
         String currentDayOfWeek = dateFormat.format(c.getTime()).toUpperCase();
         //dayOfWeek.setText(currentDayOfWeek);
 
-        if(currentDayOfWeek.equals("THURSDAY")){
+        if (currentDayOfWeek.equals("THURSDAY")) {
             morningMeal1.setText("Porridge");
             morningMeal2.setText("Mandazi");
             morningMeal3.setText("Banana");
