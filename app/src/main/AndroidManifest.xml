@@ -37,7 +37,7 @@
             android:exported="false"
             android:theme="@style/Theme.MyGymnasium.DarkActionBar." />
         <activity
-            android:name=".Workouts.FullBody.ExercisesView"
+            android:name=".Workouts.ExercisesView"
             android:exported="false" />
         <activity
             android:name=".Workouts.FullBody.FullBodyFriday"
