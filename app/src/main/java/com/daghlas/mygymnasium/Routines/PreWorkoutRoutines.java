@@ -13,7 +13,7 @@ import android.text.Html;
 import com.daghlas.mygymnasium.Adapters.ExercisesAdapter;
 import com.daghlas.mygymnasium.Models.ExercisesModel;
 import com.daghlas.mygymnasium.R;
-import com.daghlas.mygymnasium.Workouts.FullBody.ExercisesView;
+import com.daghlas.mygymnasium.Workouts.ExercisesView;
 import com.daghlas.mygymnasium.Workouts.WorkoutsInterface;
 
 import java.util.ArrayList;
