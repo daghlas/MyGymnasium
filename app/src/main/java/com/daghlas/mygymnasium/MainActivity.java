@@ -291,78 +291,86 @@ public class MainActivity extends AppCompatActivity {
         String currentDayOfWeek = dateFormat.format(c.getTime()).toUpperCase();
         //dayOfWeek.setText(currentDayOfWeek);
 
-        if (currentDayOfWeek.equals("MONDAY")) {
-            morningMeal1.setText("Porridge");
-            morningMeal2.setText("Mandazi");
-            morningMeal3.setText("Banana");
+        switch (currentDayOfWeek) {
+            case "MONDAY":
+                morningMeal1.setText("Porridge");
+                morningMeal2.setText("Mandazi");
+                morningMeal3.setText("Banana");
 
-            afternoonMeal1.setText("Ugali");
-            afternoonMeal2.setText("Vegetables");
-            afternoonMeal3.setText("Beef");
+                afternoonMeal1.setText("Ugali");
+                afternoonMeal2.setText("Vegetables");
+                afternoonMeal3.setText("Beef");
 
-            eveningMeal1.setText("Chapati");
-            eveningMeal2.setText("Beans");
-            eveningMeal3.setText("Fruit");
-        } else if(currentDayOfWeek.equals("TUESDAY")){
-            morningMeal1.setText("Milk");
-            morningMeal2.setText("Bread");
-            morningMeal3.setText("Apple");
+                eveningMeal1.setText("Chapati");
+                eveningMeal2.setText("Beans");
+                eveningMeal3.setText("Fruit");
+                break;
+            case "TUESDAY":
+                morningMeal1.setText("Milk");
+                morningMeal2.setText("Bread");
+                morningMeal3.setText("Apple");
 
-            afternoonMeal1.setText("Rice");
-            afternoonMeal2.setText("Peas");
-            afternoonMeal3.setText("Spinach");
+                afternoonMeal1.setText("Rice");
+                afternoonMeal2.setText("Peas");
+                afternoonMeal3.setText("Spinach");
 
-            eveningMeal1.setText("Ugali");
-            eveningMeal2.setText("Kales");
-            eveningMeal3.setText("Liver");
-        }else if(currentDayOfWeek.equals("WEDNESDAY")){
-            morningMeal1.setText("Coffee");
-            morningMeal2.setText("Chapati");
-            morningMeal3.setText("Melon");
+                eveningMeal1.setText("Ugali");
+                eveningMeal2.setText("Kales");
+                eveningMeal3.setText("Liver");
+                break;
+            case "WEDNESDAY":
+                morningMeal1.setText("Coffee");
+                morningMeal2.setText("Chapati");
+                morningMeal3.setText("Melon");
 
-            afternoonMeal1.setText("Ugali");
-            afternoonMeal2.setText("Vegetables");
-            afternoonMeal3.setText("Fish");
+                afternoonMeal1.setText("Ugali");
+                afternoonMeal2.setText("Vegetables");
+                afternoonMeal3.setText("Fish");
 
-            eveningMeal1.setText("Chapati");
-            eveningMeal2.setText("Chicken");
-            eveningMeal3.setText("Fruit");
-        }else if(currentDayOfWeek.equals("THURSDAY")){
-            morningMeal1.setText("Milk");
-            morningMeal2.setText("Sausages");
-            morningMeal3.setText("Chapati");
+                eveningMeal1.setText("Chapati");
+                eveningMeal2.setText("Chicken");
+                eveningMeal3.setText("Fruit");
+                break;
+            case "THURSDAY":
+                morningMeal1.setText("Milk");
+                morningMeal2.setText("Sausages");
+                morningMeal3.setText("Chapati");
 
-            afternoonMeal1.setText("Rice");
-            afternoonMeal2.setText("Vegetables");
-            afternoonMeal3.setText("Beef");
+                afternoonMeal1.setText("Rice");
+                afternoonMeal2.setText("Vegetables");
+                afternoonMeal3.setText("Beef");
 
-            eveningMeal1.setText("Potatoes");
-            eveningMeal2.setText("Rice");
-            eveningMeal3.setText("Vegetables");
-        }else if(currentDayOfWeek.equals("FRIDAY")){
-            morningMeal1.setText("Porridge");
-            morningMeal2.setText("Mandazi");
-            morningMeal3.setText("Pineapples");
+                eveningMeal1.setText("Potatoes");
+                eveningMeal2.setText("Rice");
+                eveningMeal3.setText("Vegetables");
+                break;
+            case "FRIDAY":
+                morningMeal1.setText("Porridge");
+                morningMeal2.setText("Mandazi");
+                morningMeal3.setText("Pineapples");
 
-            afternoonMeal1.setText("Ugali");
-            afternoonMeal2.setText("Vegetables");
-            afternoonMeal3.setText("Beef");
+                afternoonMeal1.setText("Ugali");
+                afternoonMeal2.setText("Vegetables");
+                afternoonMeal3.setText("Beef");
 
-            eveningMeal1.setText("Chapati");
-            eveningMeal2.setText("Green grams");
-            eveningMeal3.setText("Fruit");
-        }else if(currentDayOfWeek.equals("SATURDAY") || currentDayOfWeek.equals("SUNDAY")){
-            morningMeal1.setText("Porridge");
-            morningMeal2.setText("Sweet potatoes");
-            morningMeal3.setText("Fruit");
+                eveningMeal1.setText("Chapati");
+                eveningMeal2.setText("Green grams");
+                eveningMeal3.setText("Fruit");
+                break;
+            case "SATURDAY":
+            case "SUNDAY":
+                morningMeal1.setText("Porridge");
+                morningMeal2.setText("Sweet potatoes");
+                morningMeal3.setText("Fruit");
 
-            afternoonMeal1.setText("Ugali");
-            afternoonMeal2.setText("Spinach");
-            afternoonMeal3.setText("Pork");
+                afternoonMeal1.setText("Ugali");
+                afternoonMeal2.setText("Spinach");
+                afternoonMeal3.setText("Pork");
 
-            eveningMeal1.setText("Potatoes");
-            eveningMeal2.setText("Rice");
-            eveningMeal3.setText("Fruit");
+                eveningMeal1.setText("Potatoes");
+                eveningMeal2.setText("Rice");
+                eveningMeal3.setText("Fruit");
+                break;
         }
     }
 
