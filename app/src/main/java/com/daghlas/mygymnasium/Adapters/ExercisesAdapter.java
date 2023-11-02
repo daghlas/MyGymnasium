@@ -41,7 +41,7 @@ public class ExercisesAdapter extends RecyclerView.Adapter<ExercisesAdapter.MyVi
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         holder.exerciseName.setText(exercisesModelList.get(position).getExercise_name());
-        holder.exerciseDuration.setText(exercisesModelList.get(position).getDuration());
+        holder.exerciseDuration.setText(formatTime(Integer.parseInt(exercisesModelList.get(position).getDuration())));
         holder.sample.setImageResource(exercisesModelList.get(position).getImage());
     }
 
@@ -77,5 +77,11 @@ public class ExercisesAdapter extends RecyclerView.Adapter<ExercisesAdapter.MyVi
             });
 
         }
+    }
+    @SuppressLint("DefaultLocale")
+    private String formatTime(int seconds) {
+        int minutes = seconds / 60;
+        int remainingSeconds = seconds % 60;
+        return String.format("%02d:%02d", minutes, remainingSeconds);
     }
 }
