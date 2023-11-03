@@ -46,7 +46,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginVertical="@dimen/_10sdp"
                 android:layout_marginStart="@dimen/_10sdp"
-                android:text="Instructions"
+                android:text="Why Yoga..?"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_13sdp" />
 
@@ -55,7 +55,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/_10sdp"
                 android:layout_marginBottom="@dimen/_10sdp"
-                android:text="Each yoga exercise has specific instructions on how they can be done and the number of sets required for each. " />
+                android:text="Helps create mental clarity and calmness, relaxes the mind, centers attention, and sharpens concentration." />
 
         </LinearLayout>
 
