@@ -29,6 +29,15 @@
             android:textSize="@dimen/_16sdp"
             android:textStyle="bold" />
 
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/ic_back"
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_gravity="center_vertical"/>
+
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
