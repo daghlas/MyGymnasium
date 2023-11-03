@@ -256,8 +256,8 @@
                         app:cardElevation="0dp">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
                             android:padding="@dimen/_10sdp">
 
                             <TextView
@@ -266,19 +266,20 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="@dimen/_13sdp"
                                 android:text="Full body"
-                                android:textSize="@dimen/_13sdp"
+                                android:textSize="@dimen/_11sdp"
                                 android:textStyle="bold"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent" />
 
                             <ImageView
-                                android:layout_width="@dimen/_60sdp"
-                                android:layout_height="@dimen/_60sdp"
+                                android:layout_width="@dimen/_55sdp"
+                                android:layout_height="@dimen/_55sdp"
                                 android:layout_marginVertical="@dimen/_10sdp"
                                 android:layout_marginStart="@dimen/_10sdp"
                                 android:src="@drawable/ic_full_body"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="1.0"
                                 app:layout_constraintStart_toEndOf="@id/full_body"
                                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -307,15 +308,15 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="@dimen/_13sdp"
-                                android:text="Butt &amp; legs"
-                                android:textSize="@dimen/_13sdp"
+                                android:text="Butt &amp; legs \n(lower body)"
+                                android:textSize="@dimen/_11sdp"
                                 android:textStyle="bold"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent" />
 
                             <ImageView
-                                android:layout_width="@dimen/_60sdp"
-                                android:layout_height="@dimen/_60sdp"
+                                android:layout_width="@dimen/_55sdp"
+                                android:layout_height="@dimen/_55sdp"
                                 android:layout_marginVertical="@dimen/_10sdp"
                                 android:layout_marginStart="@dimen/_10sdp"
                                 android:src="@drawable/ic_butt"
@@ -355,17 +356,17 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="@dimen/_13sdp"
-                                android:text="Abs"
-                                android:textSize="@dimen/_13sdp"
+                                android:text="Abs &amp; arms \n(upper body)"
+                                android:textSize="@dimen/_11sdp"
                                 android:textStyle="bold"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent" />
 
                             <ImageView
-                                android:layout_width="@dimen/_60sdp"
-                                android:layout_height="@dimen/_60sdp"
+                                android:layout_width="@dimen/_55sdp"
+                                android:layout_height="@dimen/_55sdp"
                                 android:layout_marginVertical="@dimen/_10sdp"
-                                android:layout_marginStart="52dp"
+                                android:layout_marginStart="@dimen/_10sdp"
                                 android:src="@drawable/ic_abs"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
@@ -396,18 +397,18 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="@dimen/_13sdp"
-                                android:text="Arms"
-                                android:textSize="@dimen/_13sdp"
+                                android:text="Yoga"
+                                android:textSize="@dimen/_11sdp"
                                 android:textStyle="bold"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent" />
 
                             <ImageView
-                                android:layout_width="@dimen/_60sdp"
-                                android:layout_height="@dimen/_60sdp"
+                                android:layout_width="@dimen/_55sdp"
+                                android:layout_height="@dimen/_55sdp"
                                 android:layout_marginVertical="@dimen/_10sdp"
                                 android:layout_marginStart="56dp"
-                                android:src="@drawable/ic_arm"
+                                android:src="@drawable/ic_yoga"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toEndOf="@+id/arm"
@@ -507,7 +508,7 @@
                                 android:padding="@dimen/_5sdp"
                                 android:text="Morning"
                                 android:textColor="@color/blue"
-                                android:textSize="@dimen/_13sdp"
+                                android:textSize="@dimen/_11sdp"
                                 android:textStyle="bold" />
 
                             <TextView
@@ -562,7 +563,7 @@
                                 android:padding="@dimen/_5sdp"
                                 android:text="Afternoon"
                                 android:textColor="@color/blue"
-                                android:textSize="@dimen/_13sdp"
+                                android:textSize="@dimen/_11sdp"
                                 android:textStyle="bold" />
 
                             <TextView
@@ -617,7 +618,7 @@
                                 android:padding="@dimen/_5sdp"
                                 android:text="Evening"
                                 android:textColor="@color/blue"
-                                android:textSize="@dimen/_13sdp"
+                                android:textSize="@dimen/_11sdp"
                                 android:textStyle="bold" />
 
                             <TextView
