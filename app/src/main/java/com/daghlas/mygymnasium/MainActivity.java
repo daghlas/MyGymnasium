@@ -24,6 +24,8 @@ import android.widget.Toast;
 
 import com.daghlas.mygymnasium.Routines.ButtLegRoutines;
 import com.daghlas.mygymnasium.Routines.FullBodyRoutines;
+import com.daghlas.mygymnasium.Routines.YogaRoutines;
+import com.daghlas.mygymnasium.Workouts.Yoga;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.text.SimpleDateFormat;
@@ -44,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
     ScrollView scrollView;
     View overlay;
     CardView cardView1, minusGlass, addGlass, fullBodyRoutine, buttLegsRoutine, editMealPlan,
-            absRoutine, armsRoutine;
+            absRoutine, yogaRoutine;
     ProgressBar progressBar;
     int currentValue = 0;
     int drinking = 0;
@@ -128,6 +130,7 @@ public class MainActivity extends AppCompatActivity {
                     navigationView.setVisibility(View.VISIBLE);
                     fullBodyRoutine.setEnabled(true);
                     buttLegsRoutine.setEnabled(true);
+                    yogaRoutine.setEnabled(true);
                 } else if (createReminder.getVisibility() == View.GONE && currentValue > 0) {
                     if (drinking < currentValue) {
                         drinking++;
@@ -139,6 +142,7 @@ public class MainActivity extends AppCompatActivity {
                         progressBar.setProgress(numerator);
                         fullBodyRoutine.setEnabled(true);
                         buttLegsRoutine.setEnabled(true);
+                        yogaRoutine.setEnabled(true);
                     } else if (drinking == currentValue) {
                         glassesDrunk.setText(String.valueOf(drinking));
                         Toast.makeText(MainActivity.this, "Well Done! Milestone complete", Toast.LENGTH_LONG).show();
@@ -153,6 +157,7 @@ public class MainActivity extends AppCompatActivity {
                     scrollView.setVerticalScrollBarEnabled(false);
                     fullBodyRoutine.setEnabled(false);
                     buttLegsRoutine.setEnabled(false);
+                    yogaRoutine.setEnabled(false);
                 }
             }
         });
@@ -196,6 +201,7 @@ public class MainActivity extends AppCompatActivity {
                     reset.setVisibility(View.VISIBLE);
                     fullBodyRoutine.setEnabled(true);
                     buttLegsRoutine.setEnabled(true);
+                    yogaRoutine.setEnabled(true);
                 }
             }
         });
@@ -212,6 +218,7 @@ public class MainActivity extends AppCompatActivity {
                 create.setText(R.string.drink);
                 fullBodyRoutine.setEnabled(false);
                 buttLegsRoutine.setEnabled(false);
+                yogaRoutine.setEnabled(false);
             }
         });
 
@@ -230,6 +237,16 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, ButtLegRoutines.class);
+                startActivity(intent);
+                //finish();
+            }
+        });
+
+        yogaRoutine = findViewById(R.id.cardView5);
+        yogaRoutine.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, YogaRoutines.class);
                 startActivity(intent);
                 //finish();
             }
@@ -272,6 +289,7 @@ public class MainActivity extends AppCompatActivity {
             navigationView.setVisibility(View.VISIBLE);
             fullBodyRoutine.setEnabled(true);
             buttLegsRoutine.setEnabled(true);
+            yogaRoutine.setEnabled(true);
         } else {
             super.onBackPressed();
         }
