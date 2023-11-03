@@ -4,9 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
-import android.os.CountDownTimer;
-import android.view.View;
+import android.os.Handler;
+import android.os.Looper;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.daghlas.mygymnasium.R;
@@ -17,13 +18,16 @@ public class ExercisesView extends AppCompatActivity {
 
     TextView name, duration, description;
     GifImageView image;
+    ImageView back;
     Button start;
-    CountDownTimer countDownTimer;
-
     //getExtras
     String name0, duration0, description0;
+    //timer
     int image0, currentTimeInSeconds;
-    private boolean isCountdownPaused = false;
+    private boolean isCountdownRunning = false;
+    private Handler countdownHandler;
+    private Runnable countdownRunnable;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,56 +55,47 @@ public class ExercisesView extends AppCompatActivity {
         description.setText(description0);
         image.setImageResource(image0);
 
-        start.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //time trickle down method
-                if (!isCountdownPaused) {
-                    startCountdown();
-                }
-
-                int dur = Integer.parseInt(duration0);
-                if(currentTimeInSeconds != dur){
-                    pauseCountdown();
-                }
+        start.setOnClickListener(v -> {
+            //time trickle down method
+            if (isCountdownRunning) {
+                pauseCountdown();
+            } else {
+                startCountdown();
             }
         });
+
+        back = findViewById(R.id.backButton);
+        back.setOnClickListener(v -> onBackPressed());
     }
 
+    @SuppressLint("SetTextI18n")
     private void startCountdown() {
-        if (countDownTimer != null) {
-            // Cancel the existing timer
-            countDownTimer.cancel();
-        }
-
-        countDownTimer = new CountDownTimer(currentTimeInSeconds * 1000L, 1000) {
-            @SuppressLint("SetTextI18n")
+        isCountdownRunning = true;
+        start.setText("PAUSE");
+        countdownHandler = new Handler(Looper.getMainLooper());
+        countdownRunnable = new Runnable() {
             @Override
-            public void onTick(long millisUntilFinished) {
-                // Update the current time
-                if (!isCountdownPaused) {
-                    currentTimeInSeconds = (int) (millisUntilFinished / 1000);
+            public void run() {
+                if (currentTimeInSeconds >= 0) {
                     updateTimeText();
-                    start.setText("PAUSE");
+                    currentTimeInSeconds--;
+                    countdownHandler.postDelayed(this, 1000); // Update every 1 second
                 } else {
-                    updateTimeText();
-                    start.setText("RESUME");
+                    isCountdownRunning = false;
+                    start.setText("FINISHED");
                 }
-            }
-            @SuppressLint("SetTextI18n")
-            @Override
-            public void onFinish() {
-                // Countdown timer finished
-                currentTimeInSeconds = 0;
-                updateTimeText();
-                start.setText("FINISHED");
             }
         };
 
-        countDownTimer.start();
+        countdownHandler.post(countdownRunnable);
     }
+    @SuppressLint("SetTextI18n")
     private void pauseCountdown() {
-        isCountdownPaused = !isCountdownPaused;
+        isCountdownRunning = false;
+        start.setText("RESUME");
+        if (countdownHandler != null && countdownRunnable != null) {
+            countdownHandler.removeCallbacks(countdownRunnable);
+        }
     }
 
     private void updateTimeText() {
