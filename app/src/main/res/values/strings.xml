@@ -233,7 +233,7 @@
 
     <!-- POST-WORKOUT ACTIVITIES-->
     <string-array name="post_workout_name">
-        <item>BUTT BRIDGE</item>
+        <item>QUAD STRETCH</item>
         <item>CLOCKWISE ARM SWING</item>
         <item>PUNCHES</item>
         <item>SIDE STEP JACKS</item>
@@ -241,7 +241,7 @@
         <item>COBRAS</item>
     </string-array>
     <string-array name="post_workout_duration">
-        <item>40</item>
+        <item>30</item>
         <item>30</item>
         <item>20</item>
         <item>20</item>
@@ -249,8 +249,10 @@
         <item>30</item>
     </string-array>
     <string-array name="post_workout_description">
-        <item>Lie on your back with knees bent and feet flat on the floor. Put your arms flat at
-            your sides. Then lift your butt up and down.</item>
+        <item>Stand on the floor, the bend your left leg and grasp your ankle or toes to bring your
+            left calf close to your left thigh. Hold this position for a few seconds, then change
+            sides and repeat. Your lifted knee should always go straight down, and your upper body
+            should keep straight during the exercise.</item>
         <item>Stand on the floor with your arms extended straight to the side at shoulder height.
             Move your arms clockwise in big fast circles. Try to do it fast as you can.</item>
         <item>Stand with one of your legs forward and your knees bent slightly. Bend your elbows and
@@ -302,41 +304,115 @@
             and repeat.</item>
     </string-array>
 
-    <!-- MONDAY BUTT & LEG-->
+    <!-- MONDAY & FRIDAY BUTT & LEG-->
     <string-array name="monday_butt_leg">
-        <item>JUMPING JACKS</item>
+        <item>PILATES CLAM SHELL - LEFT</item>
+        <item>PILATES CLAM SHELL - RIGHT</item>
+        <item>BUTT BRIDGE</item>
+        <item>HIP BRIDGE &amp; LEG LIFT - LEFT</item>
+        <item>HIP BRIDGE &amp; LEG LIFT - RIGHT</item>
         <item>SQUATS</item>
-        <item>PLANK LEG UP</item>
-        <item>BICYCLE CRUNCHES</item>
-        <item>REVERSE CRUNCHES</item>
-        <item>BOX PUSH-UPS</item>
     </string-array>
     <string-array name="monday_butt_leg_duration">
         <item>30</item>
-        <item>20</item>
         <item>30</item>
-        <item>20</item>
+        <item>40</item>
+        <item>30</item>
         <item>30</item>
         <item>20</item>
     </string-array>
     <string-array name="monday_butt_leg_description">
-        <item>Start with your feet together and your arms by your side, then jump up with your feet
-            apart and your hands overhead. Return to the start position then do the next rep. This
-            exercise provides a full body workout and works all your large muscle groups.</item>
+        <item>Lie on your right side with your head resting on your arm and knees bent. Lift your
+            left knee upwards while keeping your heels touching, then go back to the starting
+            position. Repeat the exercise.</item>
+        <item>Lie on your left side with your head resting on your arm and knees bent. Lift your
+            right knee upwards while keeping your heels touching, then go back to the starting
+            position. Repeat the exercise.</item>
+        <item>Lie on your back with knees bent and feet flat on the floor. Put your arms flat at
+            your sides. Then lift your butt up and down.</item>
+        <item>Lie on the floor with your knees bent and feet flat on the floor. Then lift your left leg up
+            while raising your hips off thr floor as high as you can. Go back to the start position
+            and repeat the exercise</item>
+        <item>Lie on the floor with your knees bent and feet flat on the floor. Then lift your right leg up
+            while raising your hips off the floor as high as you can. Go back to the start position
+            and repeat the exercise</item>
         <item>Stand with your feet shoulder width apart and your arms stretched forward, then lower
             your body until your thighs are parallel with the floor. Your knees should be extended
             in the same direction as your toes.Return to the start position and do the next rep.
             This works the thighs, hips buttocks, quads, hamstrings and lower body</item>
+    </string-array>
+
+    <!-- TUESDAY & THURSDAY BUTT & LEG-->
+    <string-array name="tuesday_butt_leg">
+        <item>DONKEY KICKS - LEFT</item>
+        <item>DONKEY KICKS - RIGHT</item>
+        <item>SPLIT SQUAT - LEFT</item>
+        <item>SPLIT SQUAT - RIGHT</item>
+        <item>BUTT BRIDGE</item>
+        <item>PLANK LEG UP</item>
+    </string-array>
+    <string-array name="tuesday_butt_leg_duration">
+        <item>30</item>
+        <item>30</item>
+        <item>30</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+    </string-array>
+    <string-array name="tuesday_butt_leg_description">
+        <item>Start on all fours with your knees under your butt and your hands under your shoulders.
+            Then lift your left leg and squeeze your butt as much as you can. Go back to the start
+            position and repeat the exercise.</item>
+        <item>Start on all fours with your knees under your butt and your hands under your shoulders.
+            Then lift your right leg and squeeze your butt as much as you can. Go back to the start
+            position and repeat the exercise.</item>
+        <item>Stand a few steps away from a bench/raised surface. Rest your left foot on the bench
+            behind you. Lower your body until your back knee nearly touches the floor and your front
+            thigh is parallel to the floor. Keep your upper body straight. Then go back to the start
+            and repeat the exercise.</item>
+        <item>Stand a few steps away from a bench/raised surface. Rest your right foot on the bench
+            behind you. Lower your body until your back knee nearly touches the floor and your front
+            thigh is parallel to the floor. Keep your upper body straight. Then go back to the start
+            and repeat the exercise.</item>
+        <item>Lie on your back with knees bent and feet flat on the floor. Put your arms flat at
+            your sides. Then lift your butt up and down.</item>
         <item>Start in the straight arm plank position. Then alternately lift and lower both legs
             up and down.</item>
-        <item>Lie on the floor with your hands behind your ears. Raise your knees and close your
-            right elbow toward your left knee, then close your left elbow toward your right knee.
-            Return to the start position then do the next rep</item>
-        <item>Lie on your back with your knees up at a 90 degree angle and your hands behind your
-            head. Lift your upper body and thighs, and then stretch out. Return to start position
-            and do the next rep</item>
-        <item>Start on all fours with your knees under your butt and your hands directly under your
-            shoulders. Bend your elbows and do a push-up. Return to the start position and repeat</item>
+    </string-array>
+
+    <!-- WEDNESDAY BUTT & LEG-->
+    <string-array name="wednesday_butt_leg">
+        <item>SIDE LEG LIFT - LEFT</item>
+        <item>SIDE LEG LIFT - RIGHT</item>
+        <item>PLANK LEG UP</item>
+        <item>FIRE HYDRANT - LEFT</item>
+        <item>FIRE HYDRANT - RIGHT</item>
+        <item>LUNGES</item>
+    </string-array>
+    <string-array name="wednesday_butt_leg_duration">
+        <item>30</item>
+        <item>30</item>
+        <item>40</item>
+        <item>20</item>
+        <item>20</item>
+        <item>30</item>
+    </string-array>
+    <string-array name="wednesday_butt_leg_description">
+        <item>Lie down on your side with your head rested on your right arm. Lift your upper leg and
+            return to the start position. Make sure your left leg goes straight up and down during
+            the exercise.</item>
+        <item>Lie down on your side with your head rested on your left arm. Lift your upper leg and
+            return to the start position. Make sure your right leg goes straight up and down during
+            the exercise.</item>
+        <item>Start in the straight arm plank position. Then alternately lift and lower both legs
+            up and down.</item>
+        <item>Start on all fours with your knees under your butt and your hands under your shoulders.
+            Then lift your left leg to the side at a 90 degree angle.</item>
+        <item>Start on all fours with your knees under your butt and your hands under your shoulders.
+            Then lift your right leg to the side at a 90 degree angle.</item>
+        <item>Stand with your feet shoulder width apart and your hands on your hips. Take a step
+            forward with your right leg and lower your body until your right thigh is parallel with
+            the floor. Then return and switch to the other leg.</item>
     </string-array>
 
 
