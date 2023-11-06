@@ -39,6 +39,16 @@ public class AbsArmsWorkout extends AppCompatActivity {
                 finish();
             }
         });
+
+        friday = findViewById(R.id.startFriday);
+        friday.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AbsArmsWorkout.this, AbsArmsMonday.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
 
     @Override
