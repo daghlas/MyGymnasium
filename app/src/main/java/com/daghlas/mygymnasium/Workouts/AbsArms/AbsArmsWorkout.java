@@ -44,7 +44,7 @@ public class AbsArmsWorkout extends AppCompatActivity {
         friday.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AbsArmsWorkout.this, AbsArmsMonday.class);
+                Intent intent = new Intent(AbsArmsWorkout.this, AbsArmsFriday.class);
                 startActivity(intent);
                 finish();
             }
