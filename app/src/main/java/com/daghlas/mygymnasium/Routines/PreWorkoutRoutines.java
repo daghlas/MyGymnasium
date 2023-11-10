@@ -55,9 +55,9 @@ public class PreWorkoutRoutines extends AppCompatActivity implements WorkoutsInt
     }
 
     private void setUpExercisesModel() {
-        String[] exerciseName = getResources().getStringArray(R.array.post_workout_name);
-        String[] exerciseDuration = getResources().getStringArray(R.array.post_workout_duration);
-        String[] exerciseDescription = getResources().getStringArray(R.array.post_workout_description);
+        String[] exerciseName = getResources().getStringArray(R.array.pre_workout_name);
+        String[] exerciseDuration = getResources().getStringArray(R.array.pre_workout_duration);
+        String[] exerciseDescription = getResources().getStringArray(R.array.pre_workout_description);
 
         for (int i = 0; i < exerciseName.length; i++) {
             exercisesModelList.add(new ExercisesModel(exerciseName[i], exerciseDuration[i], exerciseDescription[i],exerciseImage[i]));
