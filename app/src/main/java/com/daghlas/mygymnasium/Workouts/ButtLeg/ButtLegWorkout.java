@@ -41,7 +41,42 @@ public class ButtLegWorkout extends AppCompatActivity {
                 finish();
             }
         });
-
+        tuesday = findViewById(R.id.startTuesday);
+        tuesday.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ButtLegWorkout.this, ButtLegTuesday.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+        wednesday = findViewById(R.id.startWednesday);
+        wednesday.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ButtLegWorkout.this, ButtLegWednesday.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+        thursday = findViewById(R.id.startThursday);
+        thursday.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ButtLegWorkout.this, ButtLegThursday.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+        friday = findViewById(R.id.startFriday);
+        friday.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ButtLegWorkout.this, ButtLegFriday.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
 
     @Override
