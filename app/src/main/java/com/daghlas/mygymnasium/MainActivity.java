@@ -1,5 +1,6 @@
 package com.daghlas.mygymnasium;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
@@ -13,6 +14,7 @@ import android.os.Bundle;
 import android.text.Html;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -22,6 +24,7 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.daghlas.mygymnasium.Routines.AbsArmsRoutines;
 import com.daghlas.mygymnasium.Routines.ButtLegRoutines;
 import com.daghlas.mygymnasium.Routines.FullBodyRoutines;
 import com.daghlas.mygymnasium.Routines.YogaRoutines;
@@ -242,6 +245,16 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        absRoutine = findViewById(R.id.cardView4);
+        absRoutine.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, AbsArmsRoutines.class);
+                startActivity(intent);
+                //finish();
+            }
+        });
+
         yogaRoutine = findViewById(R.id.cardView5);
         yogaRoutine.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -260,7 +273,7 @@ public class MainActivity extends AppCompatActivity {
                 builder.setTitle("Edit Meal Plan");
                 builder.setMessage("Customise this meal plan to match your own desired meal preferences " +
                         "for each day.");
-                builder.setIcon(R.mipmap.ic_launcher);
+                builder.setIcon(R.mipmap.ic_launcher_custom);
                 builder.setCancelable(false);
                 builder.setPositiveButton("PROCEED", new DialogInterface.OnClickListener() {
                     @Override
@@ -300,6 +313,40 @@ public class MainActivity extends AppCompatActivity {
         MenuInflater menuInflater = getMenuInflater();
         menuInflater.inflate(R.menu.options_menu, menu);
         return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        int itemId = item.getItemId();
+        if (itemId == R.id.menu_about) {
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setCancelable(false);
+            builder.setTitle(R.string.app_name);
+            builder.setMessage("ABOUT.\n\n" +
+                    "My Gymnasium is an app built to help women who want to achieve their desired body " +
+                    "goals work towards accomplishing it. It is a fully offline app, and all training exercises " +
+                    "don't require any use of gym equipments thereby making is most favourable for those " +
+                    "who choose to workout from the comfort of their homes, while also taking into account the affordability " +
+                    "since it is fully free and no fees are paid, and no expenses are expended to acquire workout equipment.\n\n" +
+                    "This is the first version and it's still " +
+                    "development therefore expect for more amazing upgrades when the next versions rolls out for updates.\n\n" +
+                    "This application is fully open source for other developers that may want to explore it and all the " +
+                    "source codes and resources used to build it are available on my developers page on github. Check " +
+                    "out the link from my details below.\n\n" +
+                    "Developer's Details:\n" +
+                    "Daghlas Kaire Kenyatta\n" +
+                    "daghlaskaire58@gmail.com\n" +
+                    "0723325631\n" +
+                    "https://github.com/daghlas");
+            builder.setIcon(R.mipmap.ic_launcher_custom);
+            builder.setPositiveButton("DISMISS", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    dialog.dismiss();
+                }
+            }).show();
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     @SuppressLint("SetTextI18n")
