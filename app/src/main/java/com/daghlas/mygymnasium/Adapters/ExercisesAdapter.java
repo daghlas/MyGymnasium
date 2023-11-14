@@ -20,7 +20,7 @@ import java.util.List;
 public class ExercisesAdapter extends RecyclerView.Adapter<ExercisesAdapter.MyViewHolder> {
 
     private final WorkoutsInterface workoutsInterface;
-    List <ExercisesModel> exercisesModelList;
+    List<ExercisesModel> exercisesModelList;
     Context context;
 
     public ExercisesAdapter(Context context, List<ExercisesModel> exercisesModelList, WorkoutsInterface workoutsInterface) {
@@ -50,7 +50,7 @@ public class ExercisesAdapter extends RecyclerView.Adapter<ExercisesAdapter.MyVi
         return exercisesModelList.size();
     }
 
-    public static class MyViewHolder extends RecyclerView.ViewHolder{
+    public static class MyViewHolder extends RecyclerView.ViewHolder {
 
         TextView exerciseName, exerciseDuration;
         ImageView sample;
@@ -66,10 +66,10 @@ public class ExercisesAdapter extends RecyclerView.Adapter<ExercisesAdapter.MyVi
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    if(workoutsInterface != null){
+                    if (workoutsInterface != null) {
                         int pos = getAdapterPosition();
 
-                        if(pos != RecyclerView.NO_POSITION){
+                        if (pos != RecyclerView.NO_POSITION) {
                             workoutsInterface.onItemClick(pos);
                         }
                     }
@@ -78,6 +78,7 @@ public class ExercisesAdapter extends RecyclerView.Adapter<ExercisesAdapter.MyVi
 
         }
     }
+
     @SuppressLint("DefaultLocale")
     private String formatTime(int seconds) {
         int minutes = seconds / 60;
