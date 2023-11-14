@@ -15,7 +15,7 @@
         <activity
             android:name=".Workouts.AbsArms.AbsArmsFriday"
             android:exported="false"
-            android:theme="@style/Theme.MyGymnasium.DarkActionBar."/>
+            android:theme="@style/Theme.MyGymnasium.DarkActionBar." />
         <activity
             android:name=".Workouts.AbsArms.AbsArmsMonday"
             android:exported="false"
