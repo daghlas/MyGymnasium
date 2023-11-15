@@ -43,7 +43,7 @@ public class ExercisesView extends AppCompatActivity {
         name0 = getIntent().getStringExtra("NAME");
         duration0 = getIntent().getStringExtra("DURATION");
         description0 = getIntent().getStringExtra("DESCRIPTION");
-        image0 = getIntent().getIntExtra("IMAGE",0);
+        image0 = getIntent().getIntExtra("IMAGE", 0);
 
         //string int conversion & duration display in 00:00 format
         assert duration0 != null;
@@ -89,6 +89,7 @@ public class ExercisesView extends AppCompatActivity {
 
         countdownHandler.post(countdownRunnable);
     }
+
     @SuppressLint("SetTextI18n")
     private void pauseCountdown() {
         isCountdownRunning = false;
