@@ -99,28 +99,25 @@ public class ChooseTarget extends AppCompatActivity {
             }
         });
 
-        buildMuscle.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                /*
-                if (isClicked){
-                    buildMuscle.setCardBackgroundColor(getResources().getColor(R.color.grey));
-                }else {
-                    buildMuscle.setCardBackgroundColor(getResources().getColor(R.color.blue));
-                    muscle_progressBar.getIndeterminateDrawable().setColorFilter(getResources().getColor(R.color.white), PorterDuff.Mode.SRC_IN);
-                    muscle_progressBar.setVisibility(View.VISIBLE);
-                    //next activity
-                    new Handler().postDelayed(()->{
-                        Intent intent = new Intent(ChooseTarget.this, YourWeight.class);
-                        startActivity(intent);
-                        finish();
-                        muscle_progressBar.setVisibility(View.INVISIBLE);
-                    },2000);
-                }
-                isClicked = !isClicked;
-                 */
-                Toast.makeText(ChooseTarget.this, "Coming soon", Toast.LENGTH_SHORT).show();
+        buildMuscle.setOnClickListener(v -> {
+            /*
+            if (isClicked){
+                buildMuscle.setCardBackgroundColor(getResources().getColor(R.color.grey));
+            }else {
+                buildMuscle.setCardBackgroundColor(getResources().getColor(R.color.blue));
+                muscle_progressBar.getIndeterminateDrawable().setColorFilter(getResources().getColor(R.color.white), PorterDuff.Mode.SRC_IN);
+                muscle_progressBar.setVisibility(View.VISIBLE);
+                //next activity
+                new Handler().postDelayed(()->{
+                    Intent intent = new Intent(ChooseTarget.this, YourWeight.class);
+                    startActivity(intent);
+                    finish();
+                    muscle_progressBar.setVisibility(View.INVISIBLE);
+                },2000);
             }
+            isClicked = !isClicked;
+             */
+            Toast.makeText(ChooseTarget.this, "Coming soon", Toast.LENGTH_SHORT).show();
         });
 
     }
