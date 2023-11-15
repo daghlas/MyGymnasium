@@ -15,7 +15,7 @@ import android.widget.TextView;
 public class SplashScreen extends AppCompatActivity {
     public static int SPLASH_SCREEN = 3000;
 
-    CardView card1,card2, card3;
+    CardView card1, card2, card3;
     TextView ash, dev;
     Animation enterLeft, rotateIn, enterBottom;
 
@@ -42,10 +42,10 @@ public class SplashScreen extends AppCompatActivity {
         card3.startAnimation(rotateIn);
 
         //next activity
-        new Handler().postDelayed(()->{
+        new Handler().postDelayed(() -> {
             Intent intent = new Intent(SplashScreen.this, ChooseTarget.class);
             startActivity(intent);
             finish();
-        },SPLASH_SCREEN);
+        }, SPLASH_SCREEN);
     }
 }
