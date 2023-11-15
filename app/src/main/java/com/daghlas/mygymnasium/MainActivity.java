@@ -28,7 +28,6 @@ import com.daghlas.mygymnasium.Routines.AbsArmsRoutines;
 import com.daghlas.mygymnasium.Routines.ButtLegRoutines;
 import com.daghlas.mygymnasium.Routines.FullBodyRoutines;
 import com.daghlas.mygymnasium.Routines.YogaRoutines;
-import com.daghlas.mygymnasium.Workouts.Yoga;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.text.SimpleDateFormat;
