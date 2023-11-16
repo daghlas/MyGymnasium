@@ -59,7 +59,7 @@ public class YogaRoutines extends AppCompatActivity implements WorkoutsInterface
         String[] exerciseDescription = getResources().getStringArray(R.array.yoga_description);
 
         for (int i = 0; i < exerciseName.length; i++) {
-            exercisesModelList.add(new ExercisesModel(exerciseName[i], exerciseDuration[i], exerciseDescription[i],exerciseImage[i]));
+            exercisesModelList.add(new ExercisesModel(exerciseName[i], exerciseDuration[i], exerciseDescription[i], exerciseImage[i]));
         }
     }
 
