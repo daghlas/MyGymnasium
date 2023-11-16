@@ -39,7 +39,6 @@ public class AbsArmsRoutines extends AppCompatActivity {
                 Intent intent = new Intent(AbsArmsRoutines.this, AbsArmsWorkout.class);
                 startActivity(intent);
                 finish();
-                //Toast.makeText(AbsArmsRoutines.this, "coming soon", Toast.LENGTH_SHORT).show();
             }
         });
         startPreWorkout = findViewById(R.id.startPreWorkout);
