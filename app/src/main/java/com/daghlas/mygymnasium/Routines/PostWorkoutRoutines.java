@@ -59,7 +59,7 @@ public class PostWorkoutRoutines extends AppCompatActivity implements WorkoutsIn
         String[] exerciseDescription = getResources().getStringArray(R.array.post_workout_description);
 
         for (int i = 0; i < exerciseName.length; i++) {
-            exercisesModelList.add(new ExercisesModel(exerciseName[i], exerciseDuration[i], exerciseDescription[i],exerciseImage[i]));
+            exercisesModelList.add(new ExercisesModel(exerciseName[i], exerciseDuration[i], exerciseDescription[i], exerciseImage[i]));
         }
     }
 
