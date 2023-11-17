@@ -11,7 +11,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.daghlas.mygymnasium.MainActivity;
 import com.daghlas.mygymnasium.R;
 import com.daghlas.mygymnasium.Workouts.FullBody.FullBodyWorkout;
 
