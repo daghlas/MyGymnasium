@@ -9,11 +9,9 @@ import android.os.Bundle;
 import android.text.Html;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 import com.daghlas.mygymnasium.R;
 import com.daghlas.mygymnasium.Workouts.AbsArms.AbsArmsWorkout;
-import com.daghlas.mygymnasium.Workouts.ButtLeg.ButtLegWorkout;
 
 public class AbsArmsRoutines extends AppCompatActivity {
 
