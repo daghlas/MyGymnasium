@@ -26,7 +26,7 @@ public class ButtLegRoutines extends AppCompatActivity {
 
         getWindow().setStatusBarColor(ContextCompat.getColor(this, R.color.blue));
 
-        if(getSupportActionBar()!=null){
+        if (getSupportActionBar() != null) {
             getSupportActionBar().setTitle(Html.fromHtml("<font color='#FFFFFFFF'>Routines</font>"));
             getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.blue)));
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -70,6 +70,7 @@ public class ButtLegRoutines extends AppCompatActivity {
             }
         });
     }
+
     @Override
     public boolean onSupportNavigateUp() {
         onBackPressed();
