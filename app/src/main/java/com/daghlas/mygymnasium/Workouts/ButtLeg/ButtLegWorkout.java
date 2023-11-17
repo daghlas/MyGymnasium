@@ -12,8 +12,6 @@ import android.widget.Button;
 
 import com.daghlas.mygymnasium.R;
 import com.daghlas.mygymnasium.Routines.ButtLegRoutines;
-import com.daghlas.mygymnasium.Routines.FullBodyRoutines;
-import com.daghlas.mygymnasium.Workouts.FullBody.FullBodyMonday;
 
 public class ButtLegWorkout extends AppCompatActivity {
 
