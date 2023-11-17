@@ -31,13 +31,10 @@ public class FullBodyWorkout extends AppCompatActivity {
         }
 
         monday = findViewById(R.id.startMonday);
-        monday.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(FullBodyWorkout.this, FullBodyMonday.class);
-                startActivity(intent);
-                finish();
-            }
+        monday.setOnClickListener(v -> {
+            Intent intent = new Intent(FullBodyWorkout.this, FullBodyMonday.class);
+            startActivity(intent);
+            finish();
         });
 
         tuesday = findViewById(R.id.startTuesday);
