@@ -43,13 +43,10 @@ public class AbsArmsRoutines extends AppCompatActivity {
             //finish();
         });
         startPostWorkout = findViewById(R.id.startPostWorkout);
-        startPostWorkout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(AbsArmsRoutines.this, PostWorkoutRoutines.class);
-                startActivity(intent);
-                //finish();
-            }
+        startPostWorkout.setOnClickListener(v -> {
+            Intent intent = new Intent(AbsArmsRoutines.this, PostWorkoutRoutines.class);
+            startActivity(intent);
+            //finish();
         });
     }
 
