@@ -33,13 +33,10 @@ public class ButtLegRoutines extends AppCompatActivity {
         }
 
         startWorkout = findViewById(R.id.startWorkout);
-        startWorkout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(ButtLegRoutines.this, ButtLegWorkout.class);
-                startActivity(intent);
-                finish();
-            }
+        startWorkout.setOnClickListener(v -> {
+            Intent intent = new Intent(ButtLegRoutines.this, ButtLegWorkout.class);
+            startActivity(intent);
+            finish();
         });
         startPreWorkout = findViewById(R.id.startPreWorkout);
         startPreWorkout.setOnClickListener(new View.OnClickListener() {
