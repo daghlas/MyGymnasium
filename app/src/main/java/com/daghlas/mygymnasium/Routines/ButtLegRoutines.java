@@ -13,7 +13,6 @@ import android.widget.Toast;
 
 import com.daghlas.mygymnasium.R;
 import com.daghlas.mygymnasium.Workouts.ButtLeg.ButtLegWorkout;
-import com.daghlas.mygymnasium.Workouts.FullBody.FullBodyWorkout;
 
 public class ButtLegRoutines extends AppCompatActivity {
 
