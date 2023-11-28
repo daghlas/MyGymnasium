@@ -54,14 +54,11 @@ public class ButtLegRoutines extends AppCompatActivity {
             }
         });
         startYoga = findViewById(R.id.startYoga);
-        startYoga.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(ButtLegRoutines.this, "Coming soon", Toast.LENGTH_SHORT).show();
-                //Intent intent = new Intent(ButtLegRoutines.this, YogaRoutines.class);
-                //startActivity(intent);
-                //finish();
-            }
+        startYoga.setOnClickListener(v -> {
+            Toast.makeText(ButtLegRoutines.this, "Coming soon", Toast.LENGTH_SHORT).show();
+            //Intent intent = new Intent(ButtLegRoutines.this, YogaRoutines.class);
+            //startActivity(intent);
+            //finish();
         });
     }
 
