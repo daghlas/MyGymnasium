@@ -39,7 +39,6 @@ public class AbsArmsRoutines extends AppCompatActivity {
         startPreWorkout.setOnClickListener(v -> {
             Intent intent = new Intent(AbsArmsRoutines.this, PreWorkoutRoutines.class);
             startActivity(intent);
-            //finish();
         });
         startPostWorkout = findViewById(R.id.startPostWorkout);
         startPostWorkout.setOnClickListener(v -> {
