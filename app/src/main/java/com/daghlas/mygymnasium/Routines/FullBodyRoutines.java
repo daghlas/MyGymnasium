@@ -52,9 +52,6 @@ public class FullBodyRoutines extends AppCompatActivity {
         startYoga = findViewById(R.id.startYoga);
         startYoga.setOnClickListener(v -> {
             Toast.makeText(FullBodyRoutines.this, "Coming Soon", Toast.LENGTH_SHORT).show();
-            //Intent intent = new Intent(FullBodyRoutines.this, YogaRoutines.class);
-            //startActivity(intent);
-            //finish();
         });
     }
 
