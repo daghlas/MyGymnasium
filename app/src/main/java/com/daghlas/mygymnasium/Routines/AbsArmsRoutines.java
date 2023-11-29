@@ -45,7 +45,6 @@ public class AbsArmsRoutines extends AppCompatActivity {
         startPostWorkout.setOnClickListener(v -> {
             Intent intent = new Intent(AbsArmsRoutines.this, PostWorkoutRoutines.class);
             startActivity(intent);
-            //finish();
         });
     }
 
