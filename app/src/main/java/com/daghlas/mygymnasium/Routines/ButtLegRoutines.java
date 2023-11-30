@@ -40,7 +40,6 @@ public class ButtLegRoutines extends AppCompatActivity {
         startPreWorkout.setOnClickListener(v -> {
             Intent intent = new Intent(ButtLegRoutines.this, PreWorkoutRoutines.class);
             startActivity(intent);
-            //finish();
         });
         startPostWorkout = findViewById(R.id.startPostWorkout);
         startPostWorkout.setOnClickListener(v -> {
