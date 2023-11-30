@@ -14,7 +14,7 @@ import com.daghlas.mygymnasium.Workouts.AbsArms.AbsArmsWorkout;
 
 public class AbsArmsRoutines extends AppCompatActivity {
 
-    Button startWorkout, startPreWorkout, startPostWorkout, startYoga;
+    Button startWorkout, startPreWorkout, startPostWorkout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
