@@ -40,7 +40,6 @@ public class FullBodyRoutines extends AppCompatActivity {
         startPreWorkout.setOnClickListener(v -> {
             Intent intent = new Intent(FullBodyRoutines.this, PreWorkoutRoutines.class);
             startActivity(intent);
-            //finish();
         });
         startPostWorkout = findViewById(R.id.startPostWorkout);
         startPostWorkout.setOnClickListener(v -> {
