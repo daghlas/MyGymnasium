@@ -73,13 +73,10 @@ public class BMI extends AppCompatActivity {
         back.setOnClickListener(v -> onBackPressed());
 
         next = findViewById(R.id.next);
-        next.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(BMI.this, MainActivity.class);
-                startActivity(intent);
-                finish();
-            }
+        next.setOnClickListener(v -> {
+            Intent intent = new Intent(BMI.this, MainActivity.class);
+            startActivity(intent);
+            finish();
         });
     }
 
