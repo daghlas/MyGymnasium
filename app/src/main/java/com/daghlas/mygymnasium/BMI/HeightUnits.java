@@ -13,24 +13,22 @@ public class HeightUnits {
         this.name = name;
     }
 
-    public static void initUnits(){
+    public static void initUnits() {
 
         unitsArrayList = new ArrayList<>();
 
         HeightUnits centimeters = new HeightUnits(0, "cm");
         unitsArrayList.add(centimeters);
 
-        //HeightUnits feet = new HeightUnits(0, "ft");
-        //unitsArrayList.add(feet);
     }
 
     public static ArrayList<HeightUnits> getUnitsArrayList() {
         return unitsArrayList;
     }
 
-    public static String[] unitNames(){
+    public static String[] unitNames() {
         String[] units = new String[unitsArrayList.size()];
-        for(int i = 0; i<unitsArrayList.size(); i++){
+        for (int i = 0; i < unitsArrayList.size(); i++) {
             units[i] = unitsArrayList.get(i).name;
         }
         return units;
