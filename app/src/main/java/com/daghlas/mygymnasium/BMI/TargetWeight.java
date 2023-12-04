@@ -34,7 +34,7 @@ public class TargetWeight extends AppCompatActivity {
         weightPicker.setOnValueChangedListener(new NumberPicker.OnValueChangeListener() {
             @Override
             public void onValueChange(NumberPicker picker, int oldVal, int newVal) {
-                preferences.edit().putInt("targetWeight", newVal).apply();;
+                preferences.edit().putInt("targetWeight", newVal).apply();
             }
         });
 
