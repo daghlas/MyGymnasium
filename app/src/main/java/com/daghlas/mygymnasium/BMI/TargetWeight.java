@@ -49,13 +49,10 @@ public class TargetWeight extends AppCompatActivity {
         back.setOnClickListener(v -> onBackPressed());
 
         next = findViewById(R.id.next);
-        next.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(TargetWeight.this, YourHeight.class);
-                startActivity(intent);
-                finish();
-            }
+        next.setOnClickListener(v -> {
+            Intent intent = new Intent(TargetWeight.this, YourHeight.class);
+            startActivity(intent);
+            finish();
         });
     }
 
