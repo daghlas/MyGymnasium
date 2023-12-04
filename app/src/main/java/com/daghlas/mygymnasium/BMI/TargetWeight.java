@@ -46,12 +46,7 @@ public class TargetWeight extends AppCompatActivity {
         unitPicker.setDisplayedValues(WeightUnits.unitNames());
 
         back = findViewById(R.id.backButton);
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                onBackPressed();
-            }
-        });
+        back.setOnClickListener(v -> onBackPressed());
 
         next = findViewById(R.id.next);
         next.setOnClickListener(new View.OnClickListener() {
