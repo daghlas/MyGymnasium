@@ -21,7 +21,7 @@
             android:layout_height="wrap_content"
             android:layout_marginVertical="@dimen/_10sdp"
             android:layout_marginStart="@dimen/_10sdp"
-            android:text="Exercises"
+            android:text="@string/exercises"
             android:textColor="@color/black"
             android:textSize="@dimen/_13sdp" />
 
@@ -46,7 +46,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginVertical="@dimen/_10sdp"
                 android:layout_marginStart="@dimen/_10sdp"
-                android:text="Instructions"
+                android:text="@string/instructions"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_13sdp" />
 
