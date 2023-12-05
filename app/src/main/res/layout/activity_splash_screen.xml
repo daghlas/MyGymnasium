@@ -11,7 +11,7 @@
         android:id="@+id/ash"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="k.d_kai's \nGYM app."
+        android:text="@string/k_d_kai_s_ngym_app"
         android:textColor="@color/white"
         android:textSize="@dimen/_40sdp"
         android:textStyle="bold"
