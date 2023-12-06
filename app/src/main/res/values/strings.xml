@@ -15,6 +15,7 @@
     <string name="next">NEXT</string>
     <string name="k_d_kai_s_ngym_app">k.d_kai\'s \nGYM app.</string>
     <string name="your_daily_milestone">Your daily milestone</string>
+    <string name="water_tracker">Water Tracker</string>
 
     <!-- MONDAY FULL BODY-->
     <string-array name="monday_full_body">
