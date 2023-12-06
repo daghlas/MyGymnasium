@@ -83,7 +83,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="@dimen/_5sdp"
-                        android:text="Water Tracker"
+                        android:text="@string/water_tracker"
                         android:textColor="@color/blue"
                         android:textSize="@dimen/_13sdp"
                         android:textStyle="bold"
