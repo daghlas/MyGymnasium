@@ -16,6 +16,8 @@
     <string name="k_d_kai_s_ngym_app">k.d_kai\'s \nGYM app.</string>
     <string name="your_daily_milestone">Your daily milestone</string>
     <string name="water_tracker">Water Tracker</string>
+    <string name="select_body_focus">Select body focus</string>
+    <string name="developed_by_k_d_kai">developed by k.d_kai</string>
 
     <!-- MONDAY FULL BODY-->
     <string-array name="monday_full_body">
