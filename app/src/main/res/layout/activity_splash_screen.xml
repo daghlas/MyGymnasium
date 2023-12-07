@@ -87,7 +87,7 @@
         android:id="@+id/developer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="developed by k.d_kai"
+        android:text="@string/developed_by_k_d_kai"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textStyle="bold"
