@@ -225,7 +225,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_10sdp"
                 android:layout_marginTop="@dimen/_13sdp"
-                android:text="Select body focus"
+                android:text="@string/select_body_focus"
                 android:textSize="@dimen/_15sdp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
