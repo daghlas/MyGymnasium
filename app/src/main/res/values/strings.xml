@@ -22,6 +22,7 @@
     <string name="meal_plan_layout">Meal plan layout</string>
     <string name="yoga">Yoga</string>
     <string name="target_bmi">Target BMI:</string>
+    <string name="bmi">BMI</string>
 
     <!-- MONDAY FULL BODY-->
     <string-array name="monday_full_body">
