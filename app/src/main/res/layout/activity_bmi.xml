@@ -79,7 +79,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/_15sdp"
-            android:text="BMI"
+            android:text="@string/bmi"
             android:textSize="@dimen/_18sdp"
             android:textStyle="bold" />
 
