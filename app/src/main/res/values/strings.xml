@@ -20,6 +20,8 @@
     <string name="developed_by_k_d_kai">developed by k.d_kai</string>
     <string name="full_body">Full body</string>
     <string name="meal_plan_layout">Meal plan layout</string>
+    <string name="yoga">Yoga</string>
+    <string name="target_bmi">Target BMI:</string>
 
     <!-- MONDAY FULL BODY-->
     <string-array name="monday_full_body">
