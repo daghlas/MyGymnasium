@@ -23,6 +23,7 @@
     <string name="yoga">Yoga</string>
     <string name="target_bmi">Target BMI:</string>
     <string name="bmi">BMI</string>
+    <string name="exit">EXIT</string>
 
     <!-- MONDAY FULL BODY-->
     <string-array name="monday_full_body">
