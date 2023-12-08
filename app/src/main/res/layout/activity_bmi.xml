@@ -39,7 +39,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Target BMI: "
+            android:text="@string/target_bmi"
             android:textSize="@dimen/_12sdp" />
 
         <TextView
