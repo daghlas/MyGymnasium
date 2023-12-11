@@ -24,6 +24,7 @@
     <string name="target_bmi">Target BMI:</string>
     <string name="bmi">BMI</string>
     <string name="exit">EXIT</string>
+    <string name="current_bmi">Current BMI -</string>
 
     <!-- MONDAY FULL BODY-->
     <string-array name="monday_full_body">
