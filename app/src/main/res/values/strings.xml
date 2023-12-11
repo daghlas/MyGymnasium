@@ -27,6 +27,7 @@
     <string name="current_bmi">Current BMI -</string>
     <string name="glasses">glasses</string>
     <string name="choose_nyour_target">CHOOSE \nYOUR TARGET</string>
+    <string name="duration">DURATION</string>
 
     <!-- MONDAY FULL BODY-->
     <string-array name="monday_full_body">
