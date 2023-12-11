@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_20sdp"
         android:layout_marginTop="@dimen/_25sdp"
-        android:text="CHOOSE \nYOUR TARGET"
+        android:text="@string/choose_nyour_target"
         android:textColor="@color/blue"
         android:textSize="@dimen/_22sdp"
         android:textStyle="bold"
