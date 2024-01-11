@@ -13,7 +13,7 @@ public class WeightUnits {
         this.name = name;
     }
 
-    public static void initUnits(){
+    public static void initUnits() {
 
         unitsArrayList = new ArrayList<>();
 
@@ -28,9 +28,9 @@ public class WeightUnits {
         return unitsArrayList;
     }
 
-    public static String[] unitNames(){
+    public static String[] unitNames() {
         String[] units = new String[unitsArrayList.size()];
-        for(int i = 0; i<unitsArrayList.size(); i++){
+        for (int i = 0; i < unitsArrayList.size(); i++) {
             units[i] = unitsArrayList.get(i).name;
         }
         return units;
